@@ -1,0 +1,82 @@
+//IMPORTS
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Days+One&family=Inconsolata:wght@700&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,600;1,500&family=Prompt:wght@400;500&family=Qahiri&family=Roboto:wght@400;500;700&family=Shadows+Into+Light&family=Special+Elite&family=Stick+No+Bills:wght@500;600&family=Unica+One&family=Viga&family=Zen+Kurenaido&display=swap');
+
+//Colors
+// $darkGrey: #1E2831;
+// $gray:#293039;
+// $darkBlue: #121923;
+// $green:#90FF03;
+// $black: #000;
+$bg:#242134;
+$titles: #F7F6FA;
+$hightlight:#F1C500;
+$bg2:#2E2B3C;
+$hightlight2:#F5982E;
+
+
+
+//FONTS
+
+//MIXINGS
+
+@mixin shadow {
+    box-shadow: 1px 1px 4px $titles;
+}
+
+/*NAVBAR STYLES*/
+
+.navbar{
+    background-color:$bg;
+    color: $titles;
+    font-family: 'Unica one', sans-serif;
+    padding: .5% 5%;
+    @include shadow();
+    opacity: 0.98;
+}
+
+.logo{
+    border-radius: 50%;
+    padding: 15px;
+    font-family: 'Zen kurenaido';
+    letter-spacing: 2px;
+}
+
+.far{
+    color: $hightlight2;
+    margin-left: 2px;
+}
+
+.letter{
+    color: $hightlight2;
+}
+
+
+.nav-link{
+    color: $titles;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all .5s linear;
+    padding: 2%;
+    margin-right: 4%;
+    border-radius: 5px;
+}
+
+.nav-link:hover{
+    color: $hightlight;
+    background-color: $bg2;
+}
+
+.my-active{
+    color: $hightlight;
+    background-color: $bg2;
+    border-bottom: 1px solid $hightlight;
+
+}
+
+.hero-section{
+    height: 100vh;
+    background-color: $bg;
+    color: $hightlight;
+}
+
+
