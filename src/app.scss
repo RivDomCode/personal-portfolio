@@ -2,43 +2,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Days+One&family=Inconsolata:wght@700&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,600;1,500&family=Prompt:wght@400;500&family=Qahiri&family=Roboto:wght@400;500;700&family=Shadows+Into+Light&family=Special+Elite&family=Stick+No+Bills:wght@500;600&family=Unica+One&family=Viga&family=Zen+Kurenaido&display=swap');
 
 //Colors
-// $darkGrey: #1E2831;
-// $gray:#293039;
-// $darkBlue: #121923;
-// $green:#90FF03;
-// $black: #000;
 $bg:#242134;
 $titles: #F7F6FA;
 $hightlight:#F1C500;
 $bg2:#2E2B3C;
 $hightlight2:#F5982E;
 
-
-
 //FONTS
+$large: 2rem;
+$medium:1.5rem;
+$small: 0.8rem;
 
 //MIXINGS
 
 @mixin shadow {
-    box-shadow: 1px 1px 4px $titles;
+    box-shadow: 1px 1px 4px $hightlight;
 }
 
-/*NAVBAR STYLES*/
+//NAVBAR STYLES
 
 .navbar{
     background-color:$bg;
     color: $titles;
-    font-family: 'Unica one', sans-serif;
-    padding: .5% 5%;
+    padding: 0 5%;
     @include shadow();
     opacity: 0.98;
 }
 
-.logo{
-    border-radius: 50%;
-    padding: 15px;
-    font-family: 'Zen kurenaido';
-    letter-spacing: 2px;
+
+.name{
+    font-family: 'Unica one', sans-serif;
+    font-weight: bolder;
+    padding: 12px;
+    letter-spacing: 4px;
 }
 
 .far{
@@ -47,7 +43,7 @@ $hightlight2:#F5982E;
 }
 
 .letter{
-    color: $hightlight2;
+    color: $hightlight;
 }
 
 
@@ -59,6 +55,7 @@ $hightlight2:#F5982E;
     padding: 2%;
     margin-right: 4%;
     border-radius: 5px;
+        font-family: 'Viga', sans-serif;
 }
 
 .nav-link:hover{
@@ -73,10 +70,82 @@ $hightlight2:#F5982E;
 
 }
 
+//HERO SECTION STYLES
+
 .hero-section{
-    height: 100vh;
+    height: 95vh;
     background-color: $bg;
-    color: $hightlight;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 66% 33%;
+
+}
+
+.hero-left-up{
+    text-align: center;
+    margin-top: 5%;
+    color: $bg;
+
+}
+
+.bg-image{
+    width:100%;
+    height: 100%;
+    background: url(./Images/retro.jpg) no-repeat center center fixed;
+    background-size: cover;
+   filter: blur(9px);
+}
+
+.bg-text{
+color: $titles;
+  border: 3px solid $titles;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-45%, -45%);
+  width: 60%;
+  padding: 20px;
 }
 
 
+.name{
+    color: $titles;
+    z-index: 3;
+}
+
+.pro{
+    color:$hightlight;
+    font-size: $medium;
+    font-weight:bold;
+}
+
+.hero-img-container{
+    height: 80%;
+
+}
+
+.hero-img{
+    height: 100%;
+    border-radius: 15px;
+}
+
+.left-side{
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+
+
+.box {
+    width: 25%;
+    border: 1px solid $titles;
+    height: 70%;
+    background-color: $bg2;
+    border-radius: 5px;
+}
+
+.hero-left-right{
+    text-align: center;
+    margin-top: 12%;
+    color: $hightlight;
+}
