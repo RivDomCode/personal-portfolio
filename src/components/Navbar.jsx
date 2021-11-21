@@ -7,8 +7,7 @@ export const Navbar = () => {
       <div className="container-fluid">
         <div className="logo">
           <h3 className="name animate__animated animate__heartBeat">
-            P<span className="letter">edr</span>o R
-            <span className="letter">iva</span>s
+            Pedro Rivas
             <i className="fab fa-angellist letter"></i>
           </h3>
         </div>

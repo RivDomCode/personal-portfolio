@@ -1,151 +1,251 @@
 //IMPORTS
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Days+One&family=Inconsolata:wght@700&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,600;1,500&family=Prompt:wght@400;500&family=Qahiri&family=Roboto:wght@400;500;700&family=Shadows+Into+Light&family=Special+Elite&family=Stick+No+Bills:wght@500;600&family=Unica+One&family=Viga&family=Zen+Kurenaido&display=swap');
+@import url("https://fonts.googleapis.com/css2?&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,600;1,500&family=Special+Elite&family=Roboto&display=swap");
 
-//Colors
-$bg:#242134;
-$titles: #F7F6FA;
-$hightlight:#F1C500;
-$bg2:#2E2B3C;
-$hightlight2:#F5982E;
+//COLORS
+$bg: #202020;
+$titles: #fff;
+$hightlight: #48b9ce;
+$bg2: #0f1105;
+$hightlight2: #f5982e;
+$shadowGray: #d3d3d2;
+$lightShadowGray: #e5e1d6;
+
+//SIZES
+$large: 4.5rem;
+$medium: 2rem;
+$small: 1.4rem;
+$tiny: 1.1rem;
 
 //FONTS
-$large: 2rem;
-$medium:1.5rem;
-$small: 0.8rem;
+$mainFont: "special elite", sans-serif;
+$secondaryFont: "roboto", sans-serif;
 
 //MIXINGS
-
 @mixin shadow {
-    box-shadow: 1px 1px 4px $hightlight;
+  box-shadow: 1px 1px 4px $shadowGray;
 }
 
 //NAVBAR STYLES
 
-.navbar{
-    background-color:$bg;
-    color: $titles;
-    padding: 0 5%;
-    @include shadow();
-    opacity: 0.98;
+.navbar {
+  background-color: $bg;
+  color: $titles;
+  padding: 0 5%;
 }
 
-
-.name{
-    font-family: 'Unica one', sans-serif;
-    font-weight: bolder;
-    padding: 12px;
-    letter-spacing: 4px;
+.name {
+  font-family: $mainFont, sans-serif;
+  font-weight: bolder;
+  padding: 2px;
+  letter-spacing: 4px;
+  color: $titles;
 }
 
-.far{
-    color: $hightlight2;
-    margin-left: 2px;
+.far {
+  color: $hightlight2;
+  margin-left: 2px;
 }
 
-.letter{
-    color: $hightlight;
+.letter {
+  color: $hightlight;
 }
 
-
-.nav-link{
-    color: $titles;
-    font-weight: 700;
-    font-size: 1.2rem;
-    transition: all .5s linear;
-    padding: 2%;
-    margin-right: 4%;
-    border-radius: 5px;
-        font-family: 'Viga', sans-serif;
+.nav-link {
+  color: $titles;
+  font-weight: 700;
+  font-size: $tiny;
+  transition: all 0.5s linear;
+  padding: 2%;
+  margin-right: 4%;
+  border-radius: 5px;
+  font-family: $secondaryFont, sans-serif;
 }
 
-.nav-link:hover{
-    color: $hightlight;
-    background-color: $bg2;
+.nav-link:hover {
+  color: $hightlight;
+  background-color: $bg2;
 }
 
-.my-active{
-    color: $hightlight;
-    background-color: $bg2;
-    border-bottom: 1px solid $hightlight;
-
+.my-active {
+  color: $hightlight;
+  background-color: $bg2;
+  border-bottom: 1px solid $hightlight;
+}
+//HOME
+.home {
+  height: 95vh;
+  width: 100vw;
 }
 
 //HERO SECTION STYLES
 
-.hero-section{
-    height: 95vh;
-    background-color: $bg;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 66% 33%;
-
+.hero-section {
+  height: 95vh;
+  background-color: $bg;
+  width: 100%;
+  display: grid;
+  position: relative;
 }
 
-.hero-left-up{
-    text-align: center;
-    margin-top: 5%;
-    color: $bg;
+.hero-name {
+  font-family: $mainFont, sans-serif;
+  font-weight: bolder;
+  font-size: $large;
 
+  margin-top: 5rem;
+  letter-spacing: 4px;
+  color: $hightlight;
 }
 
-.bg-image{
-    width:100%;
-    height: 100%;
-    background: url(./Images/retro.jpg) no-repeat center center fixed;
-    background-size: cover;
-   filter: blur(9px);
+.pro {
+  color: $titles;
+  font-size: $medium;
+  font-weight: bold;
+  font-family: $secondaryFont, sans-serif;
 }
 
-.bg-text{
-color: $titles;
-  border: 3px solid $titles;
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  transform: translate(-45%, -45%);
-  width: 60%;
+.bg-text {
+  background: url("./Images/retro.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.9)),
+    url("./Images/retro.jpg");
+  color: $titles;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   padding: 20px;
+  box-shadow: 1px 1px 4px $shadowGray;
 }
 
-
-.name{
-    color: $titles;
-    z-index: 3;
+.contact-btn-container {
+  border: 1px solid $shadowGray;
+  background-color: transparent;
+  transition: all linear 0.5s;
 }
 
-.pro{
-    color:$hightlight;
-    font-size: $medium;
-    font-weight:bold;
+.contact-btn-container:hover {
+  background-color: $shadowGray;
+  color: $bg;
 }
 
-.hero-img-container{
-    height: 80%;
-
+.contact-btn {
+  font-family: $mainFont, sans-serif;
+  text-decoration: none;
+  color: $shadowGray;
+  font-size: $medium;
+  font-weight: bolder;
+  transition: all linear 0.5s;
+  width: 100%;
+  height: 100%;
+  padding: $tiny;
 }
 
-.hero-img{
-    height: 100%;
-    border-radius: 15px;
+.contact-btn:hover {
+  color: $bg2;
 }
 
-.left-side{
-    display: grid;
-    grid-template-rows: 60% 40%;
+.projects-btn-container {
+  border: 1px solid $hightlight2;
+  background-color: transparent;
+  transition: all linear 0.5s;
+  margin-bottom: $small;
 }
 
+.projects-btn-container:hover {
+  color: $bg2;
+  background-color: $hightlight2;
+}
 
+.projects-btn {
+  font-family: $mainFont;
+  text-decoration: none;
+  color: $hightlight2;
+  font-size: $medium;
+  font-weight: bolder;
+  transition: all linear 0.5s;
+  width: 100%;
+  height: 100%;
+  padding: $tiny;
+}
+
+.projects-btn:hover {
+  color: $bg2;
+}
+
+.left-side {
+  display: grid;
+  grid-template-rows: 60% 40%;
+}
 
 .box {
-    width: 25%;
-    border: 1px solid $titles;
-    height: 70%;
-    background-color: $bg2;
-    border-radius: 5px;
+  width: 25%;
+  height: 80%;
+  background-color: $bg2;
+  border-radius: 5px;
+  font-family: $secondaryFont;
+  font-size: $small;
+  box-shadow: 2px 2px 5px $lightShadowGray, -2px -2px 5px $shadowGray;
+  color: $titles;
+  font-weight: bolder;
+  transition: all linear 0.2s;
+  display: grid;
+  place-items: center;
 }
 
-.hero-left-right{
-    text-align: center;
-    margin-top: 12%;
-    color: $hightlight;
+.box:hover {
+  transform: scale(1.1);
+  color: $hightlight2;
+  box-shadow: 2px 2px 5px $hightlight2, -2px -2px 5px $titles;
+  font-size: $medium;
+  font-family: $mainFont;
+}
+
+.hero-left-down {
+  text-align: center;
+  margin-top: 8%;
+  color: $hightlight;
+}
+
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(Images/back.jpg);
+  background-size: contain;
+}
+
+.tech {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(Images/tech.jpg);
+  background-size: contain;
+}
+
+.projects {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(Images/projects.jpg);
+  background-size: contain;
+}
+
+.box-title {
+  padding: $tiny;
+}
+
+//MODAL
+.modal-overlay {
+  background-color: cadetblue;
+  color: blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  z-index: -1;
+}
+
+.show-modal {
+  visibility: visible;
+  z-index: 10;
 }
