@@ -1,8 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { ModalComponent } from "./ModalComponent";
+import { useGlobalContext } from "../context/AppContext";
 
 export const HeroSectionPage = () => {
+  const { openModal } = useGlobalContext();
+
   return (
     <div className="hero-section">
       <div className="left-side">
@@ -39,7 +41,9 @@ export const HeroSectionPage = () => {
         <div className="hero-left-down d-flex justify-content-around animate__animated animate__fadeInUp">
           <div className="background box">
             <span className="box-title"> Background</span>
-            <button className="btn btn-outline-light">Check this out</button>
+            <button className="btn btn-outline-light" onClick={openModal}>
+              Check this out
+            </button>
           </div>
           <div className="tech box">
             <span className="box-title"> Tech stack</span>

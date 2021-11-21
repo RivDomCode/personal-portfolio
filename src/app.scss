@@ -39,6 +39,7 @@ $secondaryFont: "roboto", sans-serif;
   padding: 2px;
   letter-spacing: 4px;
   color: $titles;
+  margin-top: 5px;
 }
 
 .far {
@@ -71,11 +72,36 @@ $secondaryFont: "roboto", sans-serif;
   background-color: $bg2;
   border-bottom: 1px solid $hightlight;
 }
+
+.menu-btn {
+  color: $hightlight2;
+  font-size: $medium;
+  box-shadow: 1px 1px 5px $lightShadowGray;
+  cursor: pointer;
+  animation: heartBeat 2s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+    color: $titles;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 //HOME
 .home {
   height: 95vh;
   width: 100vw;
 }
+
+//ASIDE MENU
 
 //HERO SECTION STYLES
 
@@ -232,8 +258,8 @@ $secondaryFont: "roboto", sans-serif;
 
 //MODAL
 .modal-overlay {
-  background-color: cadetblue;
-  color: blue;
+  background-color: $bg;
+  color: $titles;
   position: fixed;
   top: 0;
   left: 0;
@@ -248,4 +274,16 @@ $secondaryFont: "roboto", sans-serif;
 .show-modal {
   visibility: visible;
   z-index: 10;
+}
+
+.modal-container {
+  background-color: $bg2;
+  height: 70vh;
+  width: 66%;
+  box-shadow: 2px 2px 5px $lightShadowGray, -2px -2px 5px $shadowGray;
+}
+
+.btn {
+  color: $hightlight2;
+  font-size: $medium;
 }
