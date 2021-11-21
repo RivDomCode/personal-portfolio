@@ -1,10 +1,13 @@
 import "./app.scss";
 import { AppRouter } from "./AppRouter";
+import { AppProvider } from "./context/AppContext";
 
 function App() {
   return (
     <div className="app">
-      <AppRouter />
+      <AppProvider>
+        <AppRouter />
+      </AppProvider>
     </div>
   );
 }
