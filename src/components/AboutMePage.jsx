@@ -1,9 +1,9 @@
 import React from "react";
 
-export const ProjectsPage = () => {
+export const AboutMePage = () => {
   return (
     <div>
-      <h1>My projects</h1>
+      <h1>About me Page</h1>
     </div>
   );
 };

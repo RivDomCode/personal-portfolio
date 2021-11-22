@@ -7,15 +7,13 @@ export const Navbar = () => {
       <div className="container-fluid">
         <div className="logo">
           <h3 className="name animate__animated animate__heartBeat">
-            Pedro Rivas
+            RivDomDev
             <i className="fab fa-angellist letter"></i>
           </h3>
         </div>
       </div>
       <div className="menu-btn-container">
-        <div className="menu-btn ">
-          <FaBars />
-        </div>
+        <FaBars className="menu-btn" />
       </div>
     </nav>
   );

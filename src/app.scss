@@ -1,3 +1,12 @@
+//GENERAL STYLES
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  overflow: hidden;
+}
+
 //IMPORTS
 @import url("https://fonts.googleapis.com/css2?&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,600;1,500&family=Special+Elite&family=Roboto&display=swap");
 
@@ -12,6 +21,7 @@ $lightShadowGray: #e5e1d6;
 
 //SIZES
 $large: 4.5rem;
+$big: 3rem;
 $medium: 2rem;
 $small: 1.4rem;
 $tiny: 1.1rem;
@@ -205,57 +215,6 @@ $secondaryFont: "roboto", sans-serif;
   grid-template-rows: 60% 40%;
 }
 
-.box {
-  width: 25%;
-  height: 80%;
-  background-color: $bg2;
-  border-radius: 5px;
-  font-family: $secondaryFont;
-  font-size: $small;
-  box-shadow: 2px 2px 5px $lightShadowGray, -2px -2px 5px $shadowGray;
-  color: $titles;
-  font-weight: bolder;
-  transition: all linear 0.2s;
-  display: grid;
-  place-items: center;
-}
-
-.box:hover {
-  transform: scale(1.1);
-  color: $hightlight2;
-  box-shadow: 2px 2px 5px $hightlight2, -2px -2px 5px $titles;
-  font-size: $medium;
-  font-family: $mainFont;
-}
-
-.hero-left-down {
-  text-align: center;
-  margin-top: 8%;
-  color: $hightlight;
-}
-
-.background {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(Images/back.jpg);
-  background-size: contain;
-}
-
-.tech {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(Images/tech.jpg);
-  background-size: contain;
-}
-
-.projects {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(Images/projects.jpg);
-  background-size: contain;
-}
-
-.box-title {
-  padding: $tiny;
-}
-
 //MODAL
 .modal-overlay {
   background-color: $bg;
@@ -267,8 +226,10 @@ $secondaryFont: "roboto", sans-serif;
   height: 100%;
   width: 100%;
   display: grid;
+  opacity: 0.9;
+  filter: blur(4px);
   place-items: center;
-  z-index: -1;
+  z-index: -1s;
 }
 
 .show-modal {
@@ -280,6 +241,7 @@ $secondaryFont: "roboto", sans-serif;
   background-color: $bg2;
   height: 70vh;
   width: 66%;
+  opacity: 1;
   box-shadow: 2px 2px 5px $lightShadowGray, -2px -2px 5px $shadowGray;
 }
 
