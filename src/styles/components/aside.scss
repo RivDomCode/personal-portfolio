@@ -1,0 +1,34 @@
+//MODAL
+.modal-overlay {
+  background-color: $bg;
+  color: $titles;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  opacity: 0.9;
+  filter: blur(4px);
+  place-items: center;
+  z-index: -1s;
+}
+
+.show-modal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modal-container {
+  background-color: $bg2;
+  height: 70vh;
+  width: 66%;
+  opacity: 1;
+  box-shadow: 2px 2px 5px $lightShadowGray, -2px -2px 5px $shadowGray;
+}
+
+.btn {
+  color: $hightlight2;
+  font-size: $medium;
+}

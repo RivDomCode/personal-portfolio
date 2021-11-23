@@ -1,0 +1,27 @@
+//IMPORTS
+@import url("https://fonts.googleapis.com/css2?&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,600;1,500&family=Special+Elite&family=Roboto&display=swap");
+
+//COLORS
+$bg: #202020;
+$titles: #fff;
+$hightlight: #48b9ce;
+$bg2: #0f1105;
+$hightlight2: #f5982e;
+$shadowGray: #d3d3d2;
+$lightShadowGray: #e5e1d6;
+
+//SIZES
+$large: 4.5rem;
+$big: 3rem;
+$medium: 2rem;
+$small: 1.4rem;
+$tiny: 1.1rem;
+
+//FONTS
+$mainFont: "special elite", sans-serif;
+$secondaryFont: "roboto", sans-serif;
+
+//MIXINGS
+@mixin shadow {
+  box-shadow: 1px 1px 4px $shadowGray;
+}

@@ -1,0 +1,46 @@
+.navbar {
+  background-color: $bg;
+  color: $titles;
+  padding: 0 5%;
+}
+
+.name {
+  font-family: $mainFont, sans-serif;
+  font-weight: bolder;
+  padding: 2px;
+  letter-spacing: 4px;
+  color: $titles;
+  margin-top: 5px;
+}
+
+.far {
+  color: $hightlight2;
+  margin-left: 2px;
+}
+
+.letter {
+  color: $hightlight;
+}
+
+.menu-btn {
+  color: $hightlight;
+  font-size: $medium;
+  box-shadow: 1px 1px 5px $lightShadowGray;
+  cursor: pointer;
+  animation: heartBeat 3s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+    color: $titles;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

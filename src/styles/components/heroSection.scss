@@ -1,0 +1,103 @@
+//HERO SECTION STYLES
+
+.hero-section {
+  height: 95vh;
+  background-color: $bg;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+
+.hero-name {
+  font-family: $mainFont, sans-serif;
+  font-weight: bolder;
+  font-size: $large;
+  margin-top: 5rem;
+  letter-spacing: 4px;
+  color: $hightlight;
+}
+
+.pro {
+  color: $titles;
+  font-size: $medium;
+  font-weight: bold;
+  font-family: $secondaryFont, sans-serif;
+}
+
+.bg-text {
+  background: url("../../Images/retro.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.9)),
+    url("../../Images/retro.jpg");
+  color: $titles;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 1px 1px 4px $shadowGray;
+}
+
+.contact-btn-container {
+  border: 1px solid $shadowGray;
+  background-color: transparent;
+  transition: all linear 0.5s;
+}
+
+.contact-btn-container:hover {
+  background-color: $shadowGray;
+  color: $bg;
+}
+
+.contact-btn {
+  font-family: $mainFont, sans-serif;
+  text-decoration: none;
+  color: $shadowGray;
+  font-size: $medium;
+  font-weight: bolder;
+  transition: all linear 0.5s;
+  width: 100%;
+  height: 100%;
+  padding: $tiny;
+}
+
+.contact-btn:hover {
+  color: $bg2;
+}
+
+.projects-btn-container {
+  border: 1px solid $hightlight2;
+  background-color: transparent;
+  transition: all linear 0.5s;
+  margin-bottom: $small;
+}
+
+.projects-btn-container:hover {
+  color: $bg2;
+  background-color: $hightlight2;
+}
+
+.projects-btn {
+  font-family: $mainFont;
+  text-decoration: none;
+  color: $hightlight2;
+  font-size: $medium;
+  font-weight: bolder;
+  transition: all linear 0.5s;
+  width: 100%;
+  height: 100%;
+  padding: $tiny;
+}
+
+.projects-btn:hover {
+  color: $bg2;
+}
+
+.left-side {
+  display: grid;
+}
+
+.bottom {
+  background: linear-gradient(to right, $bg2, white 50%);
+}

@@ -1,4 +1,4 @@
-import "./app.scss";
+import './styles/app.scss';
 import { AppRouter } from "./AppRouter";
 import { AppProvider } from "./context/AppContext";
 
