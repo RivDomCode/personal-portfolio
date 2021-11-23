@@ -13,7 +13,7 @@ export const AppRouter = () => {
       <div>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={HeroSectionPage} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/about" component={AboutMePage} />
           <Route exact path="/contact" component={ContactMePage} />
           <Route exact path="/blog" component={BlogPage} />

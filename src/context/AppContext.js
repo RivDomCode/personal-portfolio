@@ -8,17 +8,17 @@ const AppProvider = ({ children }) => {
 
 
     //Logic to open an close the modal
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isAsideOpen, setIsAsideOpen] = useState(false);
 
-    const openModal = () => {
-        setIsModalOpen(true);
+    const openAside = () => {
+        setIsAsideOpen(true);
     }
 
-    const closeModal = () => {
-        setIsModalOpen(false)
+    const closeAside = () => {
+        setIsAsideOpen(false)
     }
 
-    return <AppContext.Provider value={{ isModalOpen, openModal, closeModal }}>{children}</AppContext.Provider>
+    return <AppContext.Provider value={{ isAsideOpen, closeAside, openAside }}>{children}</AppContext.Provider>
 }
 
 export { AppContext, AppProvider };

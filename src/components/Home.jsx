@@ -1,11 +1,11 @@
 import React from "react";
 import { HeroSectionPage } from "./HeroSectionPage";
-import { ModalComponent } from "./ModalComponent";
+import { AsideComponent } from "./AsideComponent";
 
 export const Home = () => {
   return (
     <div className="home">
-      <ModalComponent />
+      <AsideComponent />
       <HeroSectionPage />
     </div>
   );

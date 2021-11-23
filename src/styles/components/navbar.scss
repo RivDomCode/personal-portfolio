@@ -9,8 +9,15 @@
   font-weight: bolder;
   padding: 2px;
   letter-spacing: 4px;
-  color: $titles;
   margin-top: 5px;
+}
+
+.json {
+  color: $hightlight2;
+  font-size: $medium;
+  padding: 0.5px;
+  margin-top: 5px;
+  font-weight: bolder;
 }
 
 .far {
@@ -18,12 +25,8 @@
   margin-left: 2px;
 }
 
-.letter {
-  color: $hightlight;
-}
-
 .menu-btn {
-  color: $hightlight;
+  color: $lightShadowGray;
   font-size: $medium;
   box-shadow: 1px 1px 5px $lightShadowGray;
   cursor: pointer;
@@ -37,10 +40,11 @@
 
   50% {
     transform: scale(1.2);
-    color: $titles;
+    color: $shadowGray;
   }
 
   100% {
     transform: scale(1);
+    color: $titles;
   }
 }

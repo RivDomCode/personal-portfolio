@@ -1,10 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useGlobalContext } from "../context/AppContext";
 
 export const HeroSectionPage = () => {
-  const { openModal } = useGlobalContext();
-
   return (
     <div className="hero-section">
       <div className="bg-text">
@@ -34,8 +31,8 @@ export const HeroSectionPage = () => {
           </button>
         </div>
       </div>
-      <div className="right">Hola</div>
-      <div className="bottom"></div>
+      <div className="right"></div>
+      <div className="bottom">Hola</div>
     </div>
   );
 };

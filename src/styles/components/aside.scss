@@ -1,6 +1,5 @@
 //MODAL
-.modal-overlay {
-  background-color: $bg;
+.aside-overlay {
   color: $titles;
   position: fixed;
   top: 0;
@@ -9,26 +8,49 @@
   height: 100%;
   width: 100%;
   display: grid;
-  opacity: 0.9;
-  filter: blur(4px);
   place-items: center;
   z-index: -1s;
 }
 
-.show-modal {
+.show-aside {
   visibility: visible;
   z-index: 10;
 }
 
-.modal-container {
-  background-color: $bg2;
-  height: 70vh;
-  width: 66%;
-  opacity: 1;
-  box-shadow: 2px 2px 5px $lightShadowGray, -2px -2px 5px $shadowGray;
+.aside-container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
 }
 
-.btn {
+.left-aside-container {
+  background-color: $bg;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.right-aside-container {
+  width: 100%;
+  color: $titles;
+  display: grid;
+  grid-template-rows: 70% 30%;
+  background: linear-gradient(to right, $bg, $bg2);
+}
+
+.nav-link {
+  color: $titles;
+  font-size: $small;
+  padding: $small;
+}
+
+.close-btn {
+  padding: 0.5rem;
+  font-size: $small;
   color: $hightlight2;
-  font-size: $medium;
+  margin-top: 0.9rem;
+  cursor: pointer;
 }
