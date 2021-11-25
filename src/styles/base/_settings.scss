@@ -1,5 +1,5 @@
 //IMPORTS
-@import url("https://fonts.googleapis.com/css2?&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,600;1,500&family=Special+Elite&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,600;1,500&family=Special+Elite&family=Montserrat&display=swap");
 
 //COLORS
 $bg: #202020;
@@ -12,6 +12,9 @@ $lightShadowGray: #e5e1d6;
 $joker: #ffe4d2;
 $joker2: #d7d7d7;
 
+$samplebg: #0e141b;
+$sampleCard: #1e262f;
+
 //SIZES
 $large: 4.5rem;
 $big: 3rem;
@@ -21,7 +24,7 @@ $tiny: 1.1rem;
 
 //FONTS
 $mainFont: "special elite", sans-serif;
-$secondaryFont: "roboto", sans-serif;
+$secondaryFont: "Montserrat", sans-serif;
 
 //MIXINGS
 @mixin shadow {

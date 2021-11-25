@@ -18,16 +18,8 @@ export const AsideComponent = () => {
           <div className="menu-links-left d-flex justify-content-between">
             <div className="top-menu">
               <NavLink
-                to="/"
-                className="nav-link animate__animated animate__slideInLeft"
-                exact
-                activeClassName="my-active"
-              >
-                Home
-              </NavLink>
-              <NavLink
                 to="/projects"
-                className="nav-link animate__animated animate__bounce"
+                className="nav-link"
                 exact
                 activeClassName="my-active"
               >
@@ -35,7 +27,7 @@ export const AsideComponent = () => {
               </NavLink>
               <NavLink
                 to="/contact"
-                className="nav-link animate__animated animate__jackInTheBox"
+                className="nav-link"
                 exact
                 activeClassName="my-active"
               >
@@ -43,7 +35,7 @@ export const AsideComponent = () => {
               </NavLink>
               <NavLink
                 to="/blog"
-                className="nav-link animate__animated animate__slideInRight"
+                className="nav-link"
                 exact
                 activeClassName="my-active"
               >

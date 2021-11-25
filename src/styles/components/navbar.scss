@@ -4,10 +4,19 @@
   padding: 0 5%;
 }
 
+.logo-img {
+  width: 6rem;
+  padding: 0.1rem;
+}
+
+.logo {
+  margin-top: 18px;
+}
+
 .name {
   font-family: $mainFont, sans-serif;
   font-weight: bolder;
-  padding: 2px;
+  padding: 1px;
   letter-spacing: 4px;
   margin-top: 5px;
 }
@@ -39,7 +48,7 @@
   }
 
   50% {
-    transform: scale(1.2);
+    transform: scale(1.5);
     color: $shadowGray;
   }
 

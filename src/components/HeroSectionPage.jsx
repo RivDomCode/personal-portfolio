@@ -30,9 +30,8 @@ export const HeroSectionPage = () => {
             </NavLink>
           </button>
         </div>
+        <div className="right"></div>
       </div>
-      <div className="right"></div>
-      <div className="bottom">Hola</div>
     </div>
   );
 };
