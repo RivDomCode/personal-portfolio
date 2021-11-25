@@ -39,18 +39,71 @@
   display: grid;
   grid-template-rows: 70% 30%;
   background: linear-gradient(to right, $bg, $bg2);
+  padding-top: $medium;
 }
 
+.top-menu {
+  display: grid;
+  place-items: center;
+}
 .nav-link {
   color: $titles;
-  font-size: $small;
+  font-size: $medium;
+  font-family: $mainFont;
+  font-weight: bolder;
+  border-radius: 8px;
+  margin-left: 8px;
+  width: 12rem;
+  height: 4rem;
+  text-align: center;
   padding: $small;
+  margin-bottom: $medium;
+}
+
+.nav-link:hover {
+  color: $bg;
+  opacity: 0.98;
+  background-color: $titles;
 }
 
 .close-btn {
   padding: 0.5rem;
-  font-size: $small;
+  font-size: $medium;
   color: $hightlight2;
   margin-top: 0.9rem;
   cursor: pointer;
+  margin-bottom: $medium;
+  border-radius: 50%;
+  line-height: $tiny;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+  color: $titles;
+  border: 2px solid $hightlight2;
+}
+
+.bottom-social {
+  font-size: $medium;
+  color: $titles;
+  padding: $medium;
+  border-radius: 50%;
+}
+
+.bottom-social:hover {
+  color: $bg;
+  background-color: $titles;
+}
+
+.sign-container {
+  font-size: $small;
+  margin-top: 7rem;
+}
+
+.heart {
+  color: $hightlight;
+}
+
+.made {
+  letter-spacing: 3px;
 }

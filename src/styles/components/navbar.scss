@@ -1,11 +1,11 @@
 .navbar {
   background-color: $bg;
   color: $titles;
-  padding: 0 5%;
+  padding: 0 5% 2% 5%;
 }
 
 .logo-img {
-  width: 6rem;
+  width: 4.2rem;
   padding: 0.1rem;
 }
 
@@ -19,6 +19,7 @@
   padding: 1px;
   letter-spacing: 4px;
   margin-top: 5px;
+  text-decoration: none;
 }
 
 .json {
@@ -40,6 +41,7 @@
   box-shadow: 1px 1px 5px $lightShadowGray;
   cursor: pointer;
   animation: heartBeat 3s ease-in-out infinite;
+  margin-top: 2rem;
 }
 
 @keyframes heartBeat {
