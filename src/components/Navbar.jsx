@@ -2,7 +2,7 @@ import React from "react";
 import { FaBars } from "react-icons/fa";
 import { VscJson } from "react-icons/vsc";
 import { useGlobalContext } from "../context/AppContext";
-import logo from "../Images/logo.jpg";
+import logo from "../Images/logo2.jpg";
 import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
