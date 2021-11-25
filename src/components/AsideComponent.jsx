@@ -10,9 +10,17 @@ import { NavLink } from "react-router-dom";
 import { useGlobalContext } from "../context/AppContext";
 
 export const AsideComponent = () => {
-  const { isAsideOpen, closeAside } = useGlobalContext();
+  //Manage menu
+  const { isAsideOpen, closeAside, setIsAsideOpen } = useGlobalContext();
+
+  //To change year automatically
   let today = new Date();
   let currentYear = today.getFullYear();
+
+  //After Click a link set CloseAside
+  const closeMenu = () => {
+    closeAside();
+  };
 
   return (
     <div
@@ -29,10 +37,20 @@ export const AsideComponent = () => {
                 <FaTimes />
               </div>
               <NavLink
+                to="/"
+                className="nav-link"
+                exact
+                activeClassName="my-active"
+                onClick={closeMenu}
+              >
+                Home
+              </NavLink>
+              <NavLink
                 to="/about"
                 className="nav-link"
                 exact
                 activeClassName="my-active"
+                onClick={closeMenu}
               >
                 About Me
               </NavLink>
@@ -41,6 +59,7 @@ export const AsideComponent = () => {
                 className="nav-link"
                 exact
                 activeClassName="my-active"
+                onClick={closeMenu}
               >
                 Projects
               </NavLink>
@@ -49,6 +68,7 @@ export const AsideComponent = () => {
                 className="nav-link"
                 exact
                 activeClassName="my-active"
+                onClick={closeMenu}
               >
                 Contact
               </NavLink>
@@ -57,6 +77,7 @@ export const AsideComponent = () => {
                 className="nav-link"
                 exact
                 activeClassName="my-active"
+                onClick={closeMenu}
               >
                 Blog
               </NavLink>

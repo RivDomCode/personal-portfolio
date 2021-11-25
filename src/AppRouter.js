@@ -6,12 +6,14 @@ import { ContactMePage } from "./components/ContactMePage";
 import { BlogPage } from "./components/BlogPage";
 import { Home } from "./components/Home";
 import { HeroSectionPage } from "./components/HeroSectionPage";
+import { AsideComponent } from "./components/AsideComponent";
 
 export const AppRouter = () => {
   return (
     <Router>
       <div>
         <Navbar />
+        <AsideComponent />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={AboutMePage} />
