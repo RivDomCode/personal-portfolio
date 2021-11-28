@@ -87,8 +87,9 @@
 .bottom-social {
   font-size: $medium;
   color: $titles;
-  padding: $medium;
+  padding: $tiny;
   border-radius: 50%;
+  align-items: center;
 }
 
 .bottom-social:hover {
