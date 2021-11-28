@@ -19,8 +19,9 @@ export const Navbar = () => {
                 RivDomDev
               </h3>
             </NavLink>
-
-            <VscJson className="json" />
+            <div className="json-container">
+              <VscJson className="json" />
+            </div>
           </div>
         </div>
       </div>

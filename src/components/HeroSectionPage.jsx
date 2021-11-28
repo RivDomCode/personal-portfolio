@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Projects } from "./Projects";
 
 export const HeroSectionPage = () => {
   return (
@@ -10,7 +11,7 @@ export const HeroSectionPage = () => {
           <p className="pro">SoftWare Developer</p>
           <button className="projects-btn-container animate__animated animate__heartBeat">
             <NavLink
-              to="/projects"
+              to="#"
               className="projects-btn"
               exact
               activeClassName="my-active"
@@ -32,6 +33,7 @@ export const HeroSectionPage = () => {
         </div>
         <div className="right"></div>
       </div>
+      <Projects />
     </div>
   );
 };

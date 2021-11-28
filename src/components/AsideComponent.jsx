@@ -17,11 +17,6 @@ export const AsideComponent = () => {
   let today = new Date();
   let currentYear = today.getFullYear();
 
-  //After Click a link set CloseAside
-  const closeMenu = () => {
-    closeAside();
-  };
-
   return (
     <div
       className={`${
@@ -29,7 +24,7 @@ export const AsideComponent = () => {
       } `}
     >
       <div className="aside-container">
-        <div className="left-aside-container"></div>
+        <div className="left-aside-container" onClick={closeAside}></div>
         <div className="right-aside-container ">
           <div className="menu-links-left">
             <div className="top-menu">
@@ -41,7 +36,7 @@ export const AsideComponent = () => {
                 className="nav-link"
                 exact
                 activeClassName="my-active"
-                onClick={closeMenu}
+                onClick={closeAside}
               >
                 Home
               </NavLink>
@@ -50,16 +45,16 @@ export const AsideComponent = () => {
                 className="nav-link"
                 exact
                 activeClassName="my-active"
-                onClick={closeMenu}
+                onClick={closeAside}
               >
                 About Me
               </NavLink>
               <NavLink
-                to="/projects"
+                to="#"
                 className="nav-link"
                 exact
                 activeClassName="my-active"
-                onClick={closeMenu}
+                onClick={closeAside}
               >
                 Projects
               </NavLink>
@@ -68,7 +63,7 @@ export const AsideComponent = () => {
                 className="nav-link"
                 exact
                 activeClassName="my-active"
-                onClick={closeMenu}
+                onClick={closeAside}
               >
                 Contact
               </NavLink>
@@ -77,7 +72,7 @@ export const AsideComponent = () => {
                 className="nav-link"
                 exact
                 activeClassName="my-active"
-                onClick={closeMenu}
+                onClick={closeAside}
               >
                 Blog
               </NavLink>
