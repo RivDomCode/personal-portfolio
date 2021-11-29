@@ -1,13 +1,16 @@
 .projects-section {
   min-height: 100%;
-  background-color: $bg;
+  background-color: $samplebg;
   color: $titles;
-  padding: 12% 9%;
+  padding: 13% 9%;
 }
 
 .projects-title {
-  font-size: $secondaryFont;
-  letter-spacing: 0.5rem;
+  font-family: $secondaryFont;
+  color: $titles;
+  font-weight: bolder;
+  font-size: $large;
+  letter-spacing: 0.2rem;
   text-align: center;
   padding: 2%;
 }

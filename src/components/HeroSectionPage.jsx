@@ -10,14 +10,9 @@ export const HeroSectionPage = () => {
           <h1 className="hero-name">RivDomDev</h1>
           <p className="pro">SoftWare Developer</p>
           <button className="projects-btn-container animate__animated animate__heartBeat">
-            <NavLink
-              to="#"
-              className="projects-btn"
-              exact
-              activeClassName="my-active"
-            >
+            <a href="#projects" className="projects-btn">
               Go To My Projects
-            </NavLink>
+            </a>
           </button>
           <br />
           <button className="contact-btn-container animate__animated animate__heartBeat">

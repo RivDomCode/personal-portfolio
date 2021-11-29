@@ -1,5 +1,5 @@
 .navbar {
-  background-color: $bg;
+  background-color: $samplebg;
   color: $titles;
   padding: 0 5% 2% 5%;
 }
@@ -15,6 +15,7 @@
 
 .name {
   font-family: $mainFont, sans-serif;
+  color: $titles;
   font-weight: bolder;
   padding: 1px;
   letter-spacing: 4px;
@@ -34,17 +35,17 @@
   font-weight: bolder;
 }
 
-.far {
-  color: $hightlight2;
-  margin-left: 2px;
+.menu-btn-container {
+  background-color: $bg2;
 }
 
-.menu-btn {
-  color: $lightShadowGray;
-  font-size: $medium;
-  box-shadow: 1px 1px 5px $lightShadowGray;
+.menu-btn-bar {
+  color: $oneMore;
+  font-size: 10rem;
   cursor: pointer;
-  animation: heartBeat 3s ease-in-out infinite;
+  font-size: 3rem;
+  font-weight: bolder;
+  animation: heartBeat 3s linear infinite;
   margin-top: 2rem;
 }
 
@@ -54,12 +55,13 @@
   }
 
   50% {
-    transform: scale(1.5);
-    color: $shadowGray;
+    transform: scale(1.2);
+    color: $bg;
+    font-weight: bolder;
   }
 
   100% {
     transform: scale(1);
-    color: $titles;
+    color: $oneMore;
   }
 }

@@ -7,6 +7,7 @@ import { BlogPage } from "./components/BlogPage";
 import { Home } from "./components/Home";
 import { HeroSectionPage } from "./components/HeroSectionPage";
 import { AsideComponent } from "./components/AsideComponent";
+import { Projects } from "./components/Projects";
 
 export const AppRouter = () => {
   return (
@@ -15,8 +16,9 @@ export const AppRouter = () => {
         <Navbar />
         <AsideComponent />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={HeroSectionPage} />
           <Route exact path="/about" component={AboutMePage} />
+          <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={ContactMePage} />
           <Route exact path="/blog" component={BlogPage} />
         </Switch>

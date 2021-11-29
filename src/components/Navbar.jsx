@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars } from "react-icons/fa";
+import { AiOutlineMenu } from "react-icons/ai";
 import { VscJson } from "react-icons/vsc";
 import { useGlobalContext } from "../context/AppContext";
 import logo from "../Images/logo2.jpg";
@@ -14,10 +14,8 @@ export const Navbar = () => {
         <div className="logo d-flex">
           <img src={logo} alt="" className="logo-img" />
           <div className="logo d-flex">
-            <NavLink to="/" exact activeClassName="my-active" className="name">
-              <h3 className="name animate__animated animate__heartBeat">
-                RivDomDev
-              </h3>
+            <NavLink to="/" className="name">
+              <h2 className="name">RivDomDev</h2>
             </NavLink>
             <div className="json-container">
               <VscJson className="json" />
@@ -25,10 +23,7 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-
-      <div className="menu-btn-container">
-        <FaBars className="menu-btn" onClick={openAside} />
-      </div>
+      <AiOutlineMenu className="menu-btn-bar" onClick={openAside} />
     </nav>
   );
 };

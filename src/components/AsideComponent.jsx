@@ -49,15 +49,15 @@ export const AsideComponent = () => {
               >
                 About Me
               </NavLink>
-              <NavLink
-                to="#"
+              <a
+                href="/projects"
                 className="nav-link"
                 exact
                 activeClassName="my-active"
                 onClick={closeAside}
               >
                 Projects
-              </NavLink>
+              </a>
               <NavLink
                 to="/contact"
                 className="nav-link"
