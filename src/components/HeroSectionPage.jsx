@@ -7,8 +7,8 @@ export const HeroSectionPage = () => {
     <div className="hero-section">
       <div className="bg-text">
         <div className="left">
-          <h1 className="hero-name">RivDomDev</h1>
-          <p className="pro">SoftWare Developer</p>
+          <h1 className="hero-name">RivDom</h1>
+          <p className="pro">Software Developer</p>
           <button className="projects-btn-container animate__animated animate__heartBeat">
             <a href="#projects" className="projects-btn">
               Go To My Projects
@@ -26,7 +26,17 @@ export const HeroSectionPage = () => {
             </NavLink>
           </button>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="aboutMe-container">
+            <h3>About Me</h3>
+            <p>
+              I am a sofware developer skilled in problem solving with all these
+              tech....
+            </p>
+            <p>aqui van las tecnologias con iconos</p>
+            <p>TODO VA CON EFECTO TYPING!!!</p>
+          </div>
+        </div>
       </div>
       <Projects />
     </div>

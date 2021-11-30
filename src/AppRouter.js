@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { AboutMePage } from "./components/AboutMePage";
 import { ContactMePage } from "./components/ContactMePage";
-import { BlogPage } from "./components/BlogPage";
 import { Home } from "./components/Home";
 import { HeroSectionPage } from "./components/HeroSectionPage";
 import { AsideComponent } from "./components/AsideComponent";
@@ -20,7 +19,6 @@ export const AppRouter = () => {
           <Route exact path="/about" component={AboutMePage} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={ContactMePage} />
-          <Route exact path="/blog" component={BlogPage} />
         </Switch>
       </div>
     </Router>

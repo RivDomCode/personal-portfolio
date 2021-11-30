@@ -67,15 +67,15 @@ export const AsideComponent = () => {
               >
                 Contact
               </NavLink>
-              <NavLink
-                to="/blog"
+              <a
+                href="https://rivdomblog.hashnode.dev/"
                 className="nav-link"
-                exact
-                activeClassName="my-active"
+                target="_blank"
+                rel="noreferrer"
                 onClick={closeAside}
               >
                 Blog
-              </NavLink>
+              </a>
             </div>
           </div>
           <div className="bottom-container">

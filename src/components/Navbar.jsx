@@ -15,7 +15,7 @@ export const Navbar = () => {
           <img src={logo} alt="" className="logo-img" />
           <div className="logo d-flex">
             <NavLink to="/" className="name">
-              <h2 className="name">RivDomDev</h2>
+              <h2 className="name">RivDom</h2>
             </NavLink>
             <div className="json-container">
               <VscJson className="json" />

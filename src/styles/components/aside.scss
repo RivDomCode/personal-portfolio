@@ -76,12 +76,13 @@
   margin-bottom: $medium;
   border-radius: 50%;
   line-height: $tiny;
+  border: 1px solid transparent;
 }
 
 .close-btn:hover {
   transform: scale(1.2);
   color: $titles;
-  border: 2px solid $hightlight2;
+  border: 1px solid $hightlight2;
 }
 
 .bottom-social {
