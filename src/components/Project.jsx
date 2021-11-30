@@ -19,7 +19,7 @@ export const Project = () => {
           <button className="more-info-btn">Read more</button>
         </div>
       </div>
-      Social
+      Tech Stack used
       <div className="project-card-bottom"></div>
     </div>
   );
