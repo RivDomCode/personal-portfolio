@@ -8,8 +8,17 @@
   background-color: $sampleCard;
   border-radius: 10px;
   padding: $tiny;
-  box-shadow: 1px 1px 5px 2px $titles;
+  box-shadow: 1px 1px 1px $lightShadowGray;
   margin-bottom: 7%;
+  //@at-root
+  background-color: white;
+  background: linear-gradient(
+    to right bottom,
+    $samplebg,
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 20px;
+  backdrop-filter: blur(5rem);
 }
 
 .project-card-top {
@@ -28,7 +37,7 @@
 }
 
 .project-card-top-text h3 {
-  color: $oneMore;
+  color: $titles;
   text-align: center;
   font-weight: bolder;
   font-size: $medium;
