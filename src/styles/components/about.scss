@@ -1,0 +1,13 @@
+.about {
+  font-family: $secondaryFont;
+  color: $titles;
+  background-color: $sampleCard;
+  height: 100vh;
+}
+
+.about h1 {
+  font-family: $mainFont;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5%;
+}

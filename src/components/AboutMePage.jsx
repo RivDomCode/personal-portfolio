@@ -2,8 +2,10 @@ import React from "react";
 
 export const AboutMePage = () => {
   return (
-    <div>
-      <h1>About me Page</h1>
-    </div>
+    <section className="about">
+      <h1>
+        About m<span className="letter-e">e</span> Page
+      </h1>
+    </section>
   );
 };

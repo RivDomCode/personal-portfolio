@@ -9,13 +9,13 @@ export const HeroSectionPage = () => {
         <div className="left">
           <h1 className="hero-name">RivDom</h1>
           <p className="pro">Software Developer</p>
-          <button className="projects-btn-container animate__animated animate__heartBeat">
+          <button className="projects-btn-container animate__animated animate__fadeInLeft">
             <a href="#projects" className="projects-btn">
               Go To My Projects
             </a>
           </button>
           <br />
-          <button className="contact-btn-container animate__animated animate__heartBeat">
+          <button className="contact-btn-container animate__animated animate__fadeInLeft">
             <NavLink
               to="/contact"
               className="contact-btn"

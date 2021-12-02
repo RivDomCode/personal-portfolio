@@ -33,7 +33,7 @@ export const AsideComponent = () => {
               </div>
               <NavLink
                 to="/"
-                className="nav-link"
+                className="nav-link animate__animated animate__fadeInRight"
                 exact
                 activeClassName="my-active"
                 onClick={closeAside}
@@ -42,7 +42,7 @@ export const AsideComponent = () => {
               </NavLink>
               <NavLink
                 to="/about"
-                className="nav-link"
+                className="nav-link animate__animated animate__fadeInRight"
                 exact
                 activeClassName="my-active"
                 onClick={closeAside}
@@ -51,7 +51,7 @@ export const AsideComponent = () => {
               </NavLink>
               <a
                 href="/projects"
-                className="nav-link"
+                className="nav-link animate__animated animate__fadeInRight"
                 exact
                 activeClassName="my-active"
                 onClick={closeAside}
@@ -60,7 +60,7 @@ export const AsideComponent = () => {
               </a>
               <NavLink
                 to="/contact"
-                className="nav-link"
+                className="nav-link animate__animated animate__fadeInRight"
                 exact
                 activeClassName="my-active"
                 onClick={closeAside}
@@ -69,7 +69,7 @@ export const AsideComponent = () => {
               </NavLink>
               <a
                 href="https://rivdomblog.hashnode.dev/"
-                className="nav-link"
+                className="nav-link animate__animated animate__fadeInRight"
                 target="_blank"
                 rel="noreferrer"
                 onClick={closeAside}

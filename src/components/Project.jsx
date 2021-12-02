@@ -3,7 +3,7 @@ import { SiHtml5, SiSass, SiCss3, SiReact, SiFirebase } from "react-icons/si";
 
 export const Project = () => {
   return (
-    <div className="project-card">
+    <div className="project-card ">
       <div className="project-card-top">
         <div
           className="project-card-top-img"
