@@ -1,6 +1,5 @@
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { VscJson } from "react-icons/vsc";
 import { useGlobalContext } from "../context/AppContext";
 import logo from "../Images/logo2.jpg";
 import { NavLink } from "react-router-dom";
@@ -15,11 +14,10 @@ export const Navbar = () => {
           <img src={logo} alt="" className="logo-img" />
           <div className="logo d-flex">
             <NavLink to="/" className="name">
-              <h2 className="name">RivDom</h2>
+              <h2 className="name">
+                RivDo<span className="json">m</span>
+              </h2>
             </NavLink>
-            <div className="json-container">
-              <VscJson className="json" />
-            </div>
           </div>
         </div>
       </div>

@@ -24,8 +24,3 @@ $tiny: 1.1rem;
 //FONTS
 $mainFont: "special elite", sans-serif;
 $secondaryFont: "Montserrat", sans-serif;
-
-//MIXINGS
-@mixin shadow {
-  box-shadow: 1px 1px 4px $shadowGray;
-}
