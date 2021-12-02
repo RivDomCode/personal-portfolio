@@ -1,0 +1,89 @@
+.contact {
+  font-family: $secondaryFont;
+  color: $titles;
+  background-color: $sampleCard;
+  height: 100vh;
+}
+
+.contact-title {
+  font-family: $mainFont;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+.letter-e {
+  color: $hightlight2;
+}
+
+.contact-form-container {
+  width: 100%;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 7%;
+  width: 40%;
+  height: 70%;
+  background-color: white;
+  background: linear-gradient(
+    to right bottom,
+    $samplebg,
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 20px;
+  backdrop-filter: blur(5rem);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.input-container label {
+  font-weight: bolder;
+  color: $titles;
+  font-size: $small;
+  font-family: $secondaryFont;
+}
+
+.input-container input {
+  border: none;
+  color: $samplebg;
+  font-weight: bolder;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid $oneMore;
+}
+
+.sub-btn-container {
+  display: grid;
+  place-items: center;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.sub-btn {
+  background-color: transparent;
+  color: $hightlight2;
+  border: 2px solid $hightlight2;
+  padding: 3% 7%;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: $tiny;
+  transition: all 0.7s linear;
+
+  &:hover {
+    color: $sampleCard;
+    background-color: $hightlight2;
+    border: 1px solid $sampleCard;
+  }
+}
