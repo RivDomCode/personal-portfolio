@@ -23,12 +23,17 @@
 .project-card-top {
   width: 100%;
   display: flex;
-  min-height: 60%;
 }
 
 .project-card-top-img {
-  min-width: 40%;
+  width: 100%;
   margin-right: $small;
+}
+
+.project-card-top-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .project-card-top-text {

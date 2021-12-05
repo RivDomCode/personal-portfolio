@@ -1,6 +1,6 @@
 //IMPORTS
 @import url("https://fonts.googleapis.com/css2?&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,600;1,500&family=Special+Elite&family=Montserrat&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap");
 //COLORS
 $bg: #202020;
 $titles: #fff;
@@ -15,12 +15,14 @@ $samplebg: #0e141b;
 $sampleCard: #1e262f;
 
 //SIZES
-$large: 4.5rem;
-$big: 3rem;
-$medium: 2rem;
-$small: 1.4rem;
-$tiny: 1.1rem;
+$large: 4rem;
+$big: 2.8rem;
+$medium: 1.6rem;
+$small: 1rem;
+$tiny: 0.9rem;
 
 //FONTS
-$mainFont: "special elite", sans-serif;
-$secondaryFont: "Montserrat", sans-serif;
+// $mainFont: "special elite", sans-serif;
+// $secondaryFont: "Montserrat", sans-serif;
+$mainFont: "Yanone Kaffeesatz", sans-serif;
+$secondaryFont: "lato", sans-serif;

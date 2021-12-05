@@ -5,14 +5,12 @@ export const Project = () => {
   return (
     <div className="project-card ">
       <div className="project-card-top">
-        <div
-          className="project-card-top-img"
-          style={{
-            backgroundSize: "cover",
-            backgroundImage:
-              "url(https://cdn.pixabay.com/photo/2018/01/06/07/53/social-3064515_960_720.jpg)",
-          }}
-        ></div>
+        <div className="project-card-top-img">
+          <img
+            src="https://cdn.pixabay.com/photo/2019/04/07/08/56/network-4109223_960_720.jpg"
+            alt=""
+          />
+        </div>
         <div className="project-card-top-text">
           <h3>Project Title</h3>
           <p>
