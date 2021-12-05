@@ -85,10 +85,14 @@
   border: 1px solid $hightlight2;
 }
 
+.bottom-container {
+  margin-top: 2.5rem;
+}
+
 .bottom-social {
   font-size: $medium;
   color: $titles;
-  padding: $tiny;
+  padding: $small;
   border-radius: 50%;
   align-items: center;
 }
@@ -100,7 +104,7 @@
 
 .sign-container {
   font-size: $small;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 .heart {

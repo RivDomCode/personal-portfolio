@@ -1,7 +1,7 @@
 //HERO SECTION STYLES
 
 .hero-section {
-  height: 75vh;
+  height: 70vh;
   background-color: $bg;
   width: 100%;
 }
@@ -43,7 +43,12 @@
   background-color: transparent;
   height: $large;
   margin-top: $small;
+  transition: all linear 0.5s;
   border-radius: 10px;
+  &:hover {
+    color: $bg;
+    background-color: $shadowGray;
+  }
 }
 
 .contact-btn {
@@ -70,6 +75,12 @@
   height: $large;
   margin-bottom: $small;
   border-radius: 10px;
+  transition: all linear 0.5s;
+
+  &:hover {
+    color: $bg2;
+    background-color: $hightlight2;
+  }
 }
 
 .projects-btn {

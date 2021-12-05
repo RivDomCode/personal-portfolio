@@ -81,20 +81,35 @@ export const AsideComponent = () => {
           <div className="bottom-container">
             <div className="bottom-social-container d-flex justify-content-around">
               <div className="icon-container">
-                <a href="" target="_blank" className="bottom-social">
+                <a
+                  href="https://github.com/RivDomCode"
+                  target="_blank"
+                  className="bottom-social"
+                  rel="noreferrer"
+                >
                   <FaGithub />
                 </a>
               </div>
 
               <div className="icon-container">
                 {" "}
-                <a href="" target="_blank" className="bottom-social">
+                <a
+                  href="https://www.linkedin.com/in/pedrorivasdominguez/"
+                  target="_blank"
+                  className="bottom-social"
+                  rel="noreferrer"
+                >
                   <FaLinkedinIn />
                 </a>
               </div>
 
               <div className="icon-container">
-                <a href="" target="_blank" className="bottom-social">
+                <a
+                  href="https://twitter.com/RivDomDev"
+                  target="_blank"
+                  className="bottom-social"
+                  rel="noreferrer"
+                >
                   <FaTwitter />
                 </a>
               </div>
