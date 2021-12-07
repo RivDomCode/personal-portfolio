@@ -16,12 +16,7 @@ export const HeroSectionPage = () => {
           </button>
           <br />
           <button className="contact-btn-container animate__animated animate__fadeInLeft">
-            <NavLink
-              to="/contact"
-              className="contact-btn"
-              exact
-              activeClassName="my-active"
-            >
+            <NavLink to="/contact" className="contact-btn" exact>
               Let's Talk
             </NavLink>
           </button>

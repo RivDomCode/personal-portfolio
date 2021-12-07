@@ -48,7 +48,7 @@
 }
 .nav-link {
   color: $titles;
-  font-size: $medium;
+  font-size: $small;
   font-family: $mainFont;
   font-weight: bolder;
   border-radius: 8px;
@@ -56,7 +56,7 @@
   width: 12rem;
   height: 4rem;
   text-align: center;
-  padding: $small;
+  padding: $tiny;
   margin-bottom: $medium;
   line-height: $small;
 }
@@ -90,9 +90,9 @@
 }
 
 .bottom-social {
-  font-size: $medium;
+  font-size: $small;
   color: $titles;
-  padding: $small;
+  padding: $tiny;
   border-radius: 50%;
   align-items: center;
 }
@@ -103,7 +103,7 @@
 }
 
 .sign-container {
-  font-size: $small;
+  font-size: $tiny;
   margin-top: 5rem;
 }
 

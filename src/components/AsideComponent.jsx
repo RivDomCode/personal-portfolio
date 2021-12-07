@@ -11,7 +11,7 @@ import { useGlobalContext } from "../context/AppContext";
 
 export const AsideComponent = () => {
   //Manage menu
-  const { isAsideOpen, closeAside, setIsAsideOpen } = useGlobalContext();
+  const { isAsideOpen, closeAside } = useGlobalContext();
 
   //To change year automatically
   let today = new Date();
@@ -35,7 +35,6 @@ export const AsideComponent = () => {
                 to="/"
                 className="nav-link animate__animated animate__fadeInRight"
                 exact
-                activeClassName="my-active"
                 onClick={closeAside}
               >
                 Home
@@ -44,7 +43,6 @@ export const AsideComponent = () => {
                 to="/about"
                 className="nav-link animate__animated animate__fadeInRight"
                 exact
-                activeClassName="my-active"
                 onClick={closeAside}
               >
                 About Me
@@ -53,7 +51,6 @@ export const AsideComponent = () => {
                 href="/projects"
                 className="nav-link animate__animated animate__fadeInRight"
                 exact
-                activeClassName="my-active"
                 onClick={closeAside}
               >
                 Projects
@@ -62,7 +59,6 @@ export const AsideComponent = () => {
                 to="/contact"
                 className="nav-link animate__animated animate__fadeInRight"
                 exact
-                activeClassName="my-active"
                 onClick={closeAside}
               >
                 Contact
