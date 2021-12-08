@@ -1,7 +1,7 @@
 //HERO SECTION STYLES
 
 .hero-section {
-  height: 70vh;
+  height: 50vh;
   background-color: $bg;
   width: 100%;
 }
@@ -10,8 +10,8 @@
   font-family: $mainFont, sans-serif;
   font-weight: bolder;
   font-size: $large;
-  margin-top: 4rem;
-  letter-spacing: 4px;
+  margin-top: 1rem;
+  letter-spacing: 8px;
   color: $oneMore;
 }
 
@@ -20,7 +20,6 @@
   font-size: $medium;
   font-weight: bold;
   font-family: $secondaryFont, sans-serif;
-  padding: $tiny;
 }
 
 .bg-text {
@@ -36,13 +35,15 @@
   text-align: center;
   padding: 20px;
   box-shadow: 1px 1px 4px $shadowGray;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-btn-container {
   border: 1px solid $shadowGray;
   background-color: transparent;
   height: $large;
-  margin-top: $small;
+  margin-top: $tiny;
   transition: all linear 0.5s;
   border-radius: 10px;
   &:hover {
@@ -73,7 +74,6 @@
   border: 1px solid $hightlight2;
   background-color: transparent;
   height: $large;
-  margin-bottom: $small;
   border-radius: 10px;
   transition: all linear 0.5s;
 
@@ -101,20 +101,31 @@
   background-color: $hightlight2;
 }
 
-.left-side {
-  display: grid;
-}
-
-.bottom {
-  background: linear-gradient(to right, $bg2, white 50%);
-  color: white;
-  width: 100%;
-  height: 200px;
-}
-
-.aboutMe-container {
-  margin-top: 4rem;
-  width: 70%;
-  height: 80%;
+.hero-section-aboutMe {
+  height: 35vh;
+  background-color: $samplebg;
   color: $titles;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutMe-leftCard {
+  background: linear-gradient(
+    222deg,
+    #111827 0%,
+    $shadowGray 20%,
+    #111827 100%
+  );
+  padding: $big;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.aboutMe-rightCard {
+  background: linear-gradient(4deg, #143445 0%, $shadowGray 7%, #143445 100%);
+  box-shadow: $titles(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: $big;
+  border-radius: 10px;
+  width: 40%;
 }

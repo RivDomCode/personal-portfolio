@@ -10,12 +10,8 @@
   padding: $tiny;
   // box-shadow: 1px 1px 1px $lightShadowGray;
   margin-bottom: 7%;
-  background-color: white;
-  background: linear-gradient(
-    to right bottom,
-    $samplebg,
-    rgba(255, 255, 255, 0.3)
-  );
+  background: linear-gradient(189deg, #111827 80%, $shadowGray);
+
   border-radius: 20px;
   backdrop-filter: blur(5rem);
 }
