@@ -18,6 +18,7 @@ export const ContactMePage = () => {
         console.log(error.text);
       }
     );
+    document.getElementById("myForm").reset();
   };
 
   return (
@@ -26,7 +27,12 @@ export const ContactMePage = () => {
         L<span className="letter-e">e</span>t's get in touch
       </h1>
       <div className="contact-form-container">
-        <form className="contact-form" onSubmit={handleSubmitForm} ref={form}>
+        <form
+          className="contact-form"
+          onSubmit={handleSubmitForm}
+          ref={form}
+          id="myForm"
+        >
           <div className="input-container">
             <label>Name</label>
             <input type="text" name="user_name" required />
