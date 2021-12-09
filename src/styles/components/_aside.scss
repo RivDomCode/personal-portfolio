@@ -38,7 +38,11 @@
   color: $titles;
   display: grid;
   grid-template-rows: 70% 30%;
-  background: linear-gradient(to right, $bg, $bg2);
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(121, 137, 212, 1) 11.2%,
+    rgba(45, 116, 213, 1) 91.2%
+  );
   padding-top: $medium;
 }
 
@@ -62,7 +66,7 @@
 }
 
 .nav-link:hover {
-  color: $bg;
+  color: $oneMore;
   opacity: 0.98;
   background-color: $titles;
 }
@@ -98,17 +102,19 @@
 }
 
 .bottom-social:hover {
-  color: $bg;
+  color: $oneMore;
   background-color: $titles;
 }
 
 .sign-container {
   font-size: $tiny;
   margin-top: 5rem;
+  color: $samplebg;
+  font-weight: bolder;
 }
 
 .heart {
-  color: $oneMore;
+  color: $hightlight2;
 }
 
 .made {

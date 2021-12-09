@@ -10,8 +10,9 @@ import {
   FaLinkedin,
   FaGithubSquare,
 } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss, SiFirebase } from "react-icons/si";
+import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { Projects } from "./Projects";
+import Typing from "react-typing-animation";
 
 export const HeroSectionPage = () => {
   return (
@@ -35,41 +36,47 @@ export const HeroSectionPage = () => {
       </div>
       <div className="hero-section-aboutMe">
         <div className="aboutMe-leftCard">
-          <p>I am a software developer</p>
-          <p>skilled in problem solving</p>
-          <p>with this tech-stack:</p>
-          <div className="aboutMe-leftCard-tech">
-            <FaHtml5 /> <FaCss3Alt />
-            <FaSass />
-            <FaBootstrap />
-            <SiTailwindcss />
-            <SiJavascript />
-            <FaReact />
-            <SiFirebase />
-            <FaNode />
+          <Typing>
+            <p>I am a software developer</p>
+            <p>skilled in problem solving</p>
+            <p>with this tech-stack:</p>
+          </Typing>
+          <div className="aboutMe-leftCard-tech animate__animated animate__rollIn animate__delay-5s">
+            <FaHtml5 className="tech-icons" />
+            <FaCss3Alt className="tech-icons" />
+            <FaSass className="tech-icons" />
+            <FaBootstrap className="tech-icons" />
+            <SiTailwindcss className="tech-icons" />
+            <SiJavascript className="tech-icons" />
+            <FaReact className="tech-icons" />
+            <FaNode className="tech-icons" />
           </div>
         </div>
-        <div className="aboutMe-rightCard">
-          <h3>You can reach me here:</h3>
-          <span className="linkedin">
-            <FaLinkedin />
-          </span>
-          <span className="github">
-            <FaGithubSquare />
-          </span>
-          <p>
-            ...or maybe you wanna say hi:{" "}
-            <a
-              href="mailto:rivdomdev@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              rivdomdev@gmail.com
-            </a>
-          </p>
+        <div className="aboutMe-rightCard ">
+          <div className="content animate__animated animate__fadeIn animate__delay-5s">
+            <h3>You can reach me here:</h3>
+            <p className="linkedin">
+              <FaLinkedin /> Linkedin
+            </p>
+            <p className="github">
+              <FaGithubSquare />
+              GitHub
+            </p>
+            <p>
+              ...or maybe you wanna say hi:
+              <br />
+              <a
+                href="mailto:rivdomdev@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                className="email"
+              >
+                rivdomdev@gmail.com
+              </a>
+            </p>
+          </div>
         </div>
       </div>
-      <Projects />
     </div>
   );
 };

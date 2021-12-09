@@ -16,6 +16,10 @@
 
 .name {
   font-family: $mainFont, sans-serif;
+  font-size: $medium;
+  background: -webkit-linear-gradient($oneMore, $oneMore2, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: $titles;
   font-weight: bolder;
   padding: 1px;

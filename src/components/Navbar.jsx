@@ -11,12 +11,10 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand ">
       <div className="container-fluid">
         <div className="logo d-flex">
-          <img src={logo} alt="" className="logo-img" />
+          {/* <img src={logo} alt="" className="logo-img" /> */}
           <div className="logo d-flex">
             <NavLink to="/" className="name">
-              <h2 className="name">
-                RivDo<span className="json">m</span>
-              </h2>
+              <h1 className="name">RivDom</h1>
             </NavLink>
           </div>
         </div>

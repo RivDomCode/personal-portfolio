@@ -8,6 +8,9 @@
 
 .hero-name {
   font-family: $mainFont, sans-serif;
+  background: -webkit-linear-gradient($oneMore, $oneMore2, $titles);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bolder;
   font-size: $large;
   margin-top: 1rem;
@@ -71,7 +74,6 @@
 }
 
 .projects-btn-container {
-  border: 1px solid $hightlight2;
   background-color: transparent;
   height: $large;
   border-radius: 10px;
@@ -84,6 +86,7 @@
 }
 
 .projects-btn {
+  border: 1px solid $hightlight2;
   font-family: $mainFont, sans-serif;
   text-decoration: none;
   color: $hightlight2;
@@ -102,7 +105,7 @@
 }
 
 .hero-section-aboutMe {
-  height: 35vh;
+  height: 40vh;
   background-color: $samplebg;
   color: $titles;
   display: flex;
@@ -111,21 +114,48 @@
 }
 
 .aboutMe-leftCard {
-  background: linear-gradient(
-    222deg,
-    #111827 0%,
-    $shadowGray 20%,
-    #111827 100%
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(45, 116, 213, 1) 11.2%,
+    rgba(121, 137, 212, 1) 91.2%
   );
-  padding: $big;
+  padding: $medium;
+
   border-radius: 10px;
   width: 40%;
+  height: 28vh;
+  box-shadow: $titles 0px 5px 7.5px -2.5px;
+  font-family: $secondaryFont;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.tech-icons {
+  font-size: 2rem;
+  color: $samplebg;
+  margin-right: 0.5rem;
 }
 
 .aboutMe-rightCard {
-  background: linear-gradient(4deg, #143445 0%, $shadowGray 7%, #143445 100%);
-  box-shadow: $titles(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: $big;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(121, 137, 212, 1) 11.2%,
+    rgba(45, 116, 213, 1) 91.2%
+  );
+  box-shadow: $titles 0px 5px 7.5px -2.5px;
+  padding: $medium;
   border-radius: 10px;
   width: 40%;
+  height: 28vh;
+  font-family: $secondaryFont;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.aboutMe-rightCard a {
+  text-decoration: none;
+  color: $samplebg;
+  font-weight: bolder;
+  font-family: $mainFont;
+  font-size: 1.8rem;
 }

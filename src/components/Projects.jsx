@@ -6,7 +6,7 @@ export const Projects = () => {
 
   return (
     <section className="projects-section" id="projects">
-      <h1 className="projects-title">PORTFOLIO</h1>
+      <h1 className="projects-title">Portfolio</h1>
       <div>
         {projects.map((value) => (
           <Project />
