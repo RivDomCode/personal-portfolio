@@ -10,26 +10,18 @@
   padding: 0.1rem;
 }
 
-.logo {
-  margin-top: 18px;
-}
-
 .name {
   font-family: $mainFont, sans-serif;
   font-size: $medium;
-  background: -webkit-linear-gradient($oneMore, $oneMore2, #eee);
+  background: -webkit-linear-gradient($oneMore, #eee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: $titles;
   font-weight: bolder;
   padding: 1px;
   letter-spacing: 4px;
-  margin-top: 2px;
-  text-decoration: none;
-}
-
-.json-container {
   margin-top: 6px;
+  text-decoration: none;
 }
 
 .json {
@@ -41,6 +33,7 @@
 
 .menu-btn-container {
   background-color: $bg2;
+  margin-top: 6px;
 }
 
 .menu-btn-bar {

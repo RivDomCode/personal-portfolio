@@ -7,6 +7,7 @@ import { HeroSectionPage } from "./components/HeroSectionPage";
 import { AsideComponent } from "./components/AsideComponent";
 import { Projects } from "./components/Projects";
 
+
 export const AppRouter = () => {
   return (
     <Router>

@@ -56,11 +56,22 @@ export const HeroSectionPage = () => {
           <div className="content animate__animated animate__fadeIn animate__delay-5s">
             <h3>You can reach me here:</h3>
             <p className="linkedin">
-              <FaLinkedin /> Linkedin
+              <a
+                href="https://www.linkedin.com/in/pedrorivasdominguez/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin /> Linkedin
+              </a>
             </p>
             <p className="github">
-              <FaGithubSquare />
-              GitHub
+              <a
+                href="https://github.com/RivDomCode"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithubSquare /> GitHub
+              </a>
             </p>
             <p>
               ...or maybe you wanna say hi:
