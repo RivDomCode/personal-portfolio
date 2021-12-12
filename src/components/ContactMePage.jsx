@@ -1,11 +1,14 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import { FaHeart } from "react-icons/fa";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 export const ContactMePage = () => {
+  //Date config
   let today = new Date();
   let currentYear = today.getFullYear();
 
+  //emailJS config
   const form = useRef();
 
   const SERVICE_ID = "service_oqytobj";
@@ -16,13 +19,45 @@ export const ContactMePage = () => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
       (result) => {
-        console.log(result.text);
+        success();
       },
       (error) => {
-        console.log(error.text);
+        error();
       }
     );
     document.getElementById("myForm").reset();
+  };
+
+  //alert msg after succes or not made using sweetalert2
+
+  const success = () => {
+    const MySwal = withReactContent(Swal);
+    MySwal.fire({
+      didOpen: () => {
+        MySwal.clickConfirm();
+      },
+    }).then(() => {
+      return MySwal.fire({
+        icon: "success",
+        title: "Succesfully sent",
+        text: "Your email is on its way!",
+      });
+    });
+  };
+
+  const error = () => {
+    const MySwal = withReactContent(Swal);
+    MySwal.fire({
+      didOpen: () => {
+        MySwal.clickConfirm();
+      },
+    }).then(() => {
+      return MySwal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+      });
+    });
   };
 
   return (
