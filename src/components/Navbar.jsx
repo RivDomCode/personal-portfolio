@@ -8,7 +8,7 @@ export const Navbar = () => {
   const { openAside } = useGlobalContext();
 
   return (
-    <nav className="navbar navbar-expand ">
+    <nav className="navbar navbar-expand " id="navbar">
       <div className="container-fluid">
         <div className="logo d-flex">
           {/* <img src={logo} alt="" className="logo-img" /> */}

@@ -93,7 +93,7 @@ export const HeroSectionPage = () => {
         </div>
         {isAsideOpen ? null : (
           <div className="back-to-top">
-            <a href="#hero">
+            <a href="#navbar">
               <BsArrowUpCircle className="arrow" />
               <p>Back to top!</p>
             </a>
