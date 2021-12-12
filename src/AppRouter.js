@@ -8,6 +8,7 @@ import { AsideComponent } from "./components/AsideComponent";
 import { Projects } from "./components/Projects";
 
 
+
 export const AppRouter = () => {
   return (
     <Router>
@@ -19,7 +20,9 @@ export const AppRouter = () => {
           <Route exact path="/about" component={AboutMePage} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={ContactMePage} />
+
         </Switch>
+
       </div>
     </Router>
   );

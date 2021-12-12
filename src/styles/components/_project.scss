@@ -4,7 +4,7 @@
 
 .project-card {
   width: 100%;
-  height: 40vh;
+  height: 100%;
   background-color: $sampleCard;
   border-radius: 10px;
   padding: $tiny;
@@ -25,19 +25,20 @@
 }
 
 .project-card-top-img {
-  max-width: 50%;
+  width: 50%;
+  height: 100%;
   margin-right: $small;
 }
 
 .project-card-top-img img {
-  height: 95%;
+  max-height: 85%;
   width: 100%;
   object-fit: contain;
   border-radius: 5px;
 }
 
 .project-card-top-text {
-  max-width: 50%;
+  width: 50%;
 }
 
 .project-card-top-text h3 {

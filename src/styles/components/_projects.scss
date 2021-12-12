@@ -1,9 +1,10 @@
 .projects-section {
-  min-height: 100%;
+  height: 100%;
   background-color: $samplebg;
   color: $titles;
   padding: 5% 9%;
   font-family: $secondaryFont;
+  margin-top: 100px;
 }
 
 .projects-title {
@@ -15,5 +16,4 @@
   text-align: center;
   padding: 2%;
   margin-bottom: 5%;
-  text-shadow: 1px 1px 3px $oneMore;
 }

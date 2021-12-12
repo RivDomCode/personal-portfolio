@@ -1,4 +1,5 @@
 import React from "react";
+import { ContactMePage } from "./ContactMePage";
 import { Project } from "./Project";
 
 export const Projects = () => {
@@ -6,12 +7,15 @@ export const Projects = () => {
 
   return (
     <section className="projects-section" id="projects">
-      <h1 className="projects-title">Portfolio</h1>
+      <h1 className="projects-title">
+        Portf<span class="letter-e">o</span>lio
+      </h1>
       <div>
         {projects.map((value) => (
           <Project />
         ))}
       </div>
+      <ContactMePage />
     </section>
   );
 };

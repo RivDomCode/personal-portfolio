@@ -2,7 +2,7 @@
   font-family: $secondaryFont;
   color: $titles;
   background-color: $samplebg;
-  height: 100vh;
+  height: 100%;
 }
 
 .contact-title {
@@ -28,8 +28,9 @@
 .contact-form {
   display: flex;
   flex-direction: column;
+  font-size: 1.2rem;
   padding: 7%;
-  width: 40%;
+  width: 60%;
   height: 70%;
   background-color: white;
   background-image: linear-gradient(
@@ -47,24 +48,32 @@
   display: flex;
   flex-direction: column;
   padding: 2%;
+  text-align: center;
 }
 
 .input-container label {
   font-weight: bolder;
+  font-family: $mainFont;
   color: $titles;
-  font-size: $small;
-  font-family: $secondaryFont;
+  font-size: 2.2rem;
 }
 
 .input-container input {
   border: none;
-  color: $samplebg;
-  font-weight: bolder;
+  padding: 0.5rem;
 }
 
 input:focus {
   outline: none;
-  border: 2px solid $oneMore;
+  border: 2px solid $titles;
+}
+.textarea:focus {
+  outline: none;
+  border: 2px solid $titles;
+}
+
+.textarea {
+  height: 10rem;
 }
 
 .sub-btn-container {
@@ -75,18 +84,40 @@ input:focus {
 }
 
 .sub-btn {
-  background-color: transparent;
-  color: $hightlight2;
-  border: 2px solid $hightlight2;
+  background-color: $titles;
+  font-family: $mainFont;
+  color: $oneMore;
+  font-size: 2.2rem;
+  font-weight: bolder;
   padding: 3% 7%;
   border-radius: 5px;
   font-weight: bolder;
-  font-size: $tiny;
   transition: all 0.7s linear;
+  border: 1px solid $oneMore;
 
   &:hover {
-    color: $sampleCard;
-    background-color: $hightlight2;
-    border: 1px solid $sampleCard;
+    color: $titles;
+    background-color: $oneMore;
+    border: 1px solid $titles;
   }
+}
+
+.footer-container {
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: -webkit-linear-gradient($oneMore, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  bottom: 0;
+  margin-top: 10%;
+  text-align: center;
+  justify-content: space-around;
+  font-weight: bolder;
+}
+
+hr {
+  height: 2px solid $oneMore;
+  color: $oneMore;
 }

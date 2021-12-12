@@ -10,13 +10,17 @@ import {
   FaLinkedin,
   FaGithubSquare,
 } from "react-icons/fa";
+import { BsArrowUpCircle } from "react-icons/bs";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { Projects } from "./Projects";
 import Typing from "react-typing-animation";
+import { useGlobalContext } from "../context/AppContext";
 
 export const HeroSectionPage = () => {
+  const { isAsideOpen } = useGlobalContext();
+
   return (
-    <div className="hero-section">
+    <div className="hero-section" id="hero">
       <div className="bg-text">
         <div className="hero-section-top">
           <h1 className="hero-name">RivDom</h1>
@@ -28,9 +32,9 @@ export const HeroSectionPage = () => {
           </button>
           <br />
           <button className="contact-btn-container animate__animated animate__fadeInLeft">
-            <NavLink to="/contact" className="contact-btn" exact>
+            <a href="#contact" className="contact-btn">
               Let's Talk
-            </NavLink>
+            </a>
           </button>
         </div>
       </div>
@@ -87,7 +91,16 @@ export const HeroSectionPage = () => {
             </p>
           </div>
         </div>
+        {isAsideOpen ? null : (
+          <div className="back-to-top">
+            <a href="#hero">
+              <BsArrowUpCircle className="arrow" />
+              <p>Back to top!</p>
+            </a>
+          </div>
+        )}
       </div>
+      <Projects />
     </div>
   );
 };
