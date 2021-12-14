@@ -9,10 +9,10 @@
   border-radius: 10px;
   padding: $tiny;
   margin-bottom: 7%;
-  background-image: linear-gradient(
+  background: linear-gradient(
     109.6deg,
-    rgba(121, 137, 212, 1) 11.2%,
-    rgba(45, 116, 213, 1) 91.2%
+    rgba(45, 116, 213, 1) 11.2%,
+    rgba(121, 137, 212, 1) 91.2%
   );
   border-radius: 20px;
   backdrop-filter: blur(5rem);
