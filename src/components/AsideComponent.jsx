@@ -112,11 +112,7 @@ export const AsideComponent = () => {
             </div>
             <div className="sign-container d-flex justify-content-center">
               <p className="made">
-                Made With
-                <span className="heart">
-                  <FaHeart />
-                </span>
-                by RivDom {currentYear}
+                Made With <FaHeart className="heart" /> by RivDom {currentYear}
               </p>
             </div>
           </div>

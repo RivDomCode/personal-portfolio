@@ -22,13 +22,22 @@ export const ContactMePage = () => {
         success();
       },
       (error) => {
-        error();
+        const MySwal = withReactContent(Swal);
+        MySwal.fire({
+          didOpen: () => {
+            MySwal.clickConfirm();
+          },
+        }).then(() => {
+          return MySwal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+          });
+        });
       }
     );
     document.getElementById("myForm").reset();
   };
-
-  //alert msg after succes or not made using sweetalert2
 
   const success = () => {
     const MySwal = withReactContent(Swal);
@@ -45,20 +54,9 @@ export const ContactMePage = () => {
     });
   };
 
-  const error = () => {
-    const MySwal = withReactContent(Swal);
-    MySwal.fire({
-      didOpen: () => {
-        MySwal.clickConfirm();
-      },
-    }).then(() => {
-      return MySwal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Something went wrong!",
-      });
-    });
-  };
+  // const error = () => {
+
+  // };
 
   return (
     <section className="contact" id="contact">
