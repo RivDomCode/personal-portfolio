@@ -32,7 +32,6 @@
   width: 50%;
   height: 100%;
   box-shadow: $titles 0px 5px 7.5px -2.5px;
-  font-family: $secondaryFont;
   font-size: 1.4rem;
   text-align: center;
 }
@@ -48,7 +47,11 @@
   border-radius: 10px;
   width: 40%;
   height: 28vh;
-  font-family: $secondaryFont;
   font-size: 1.4rem;
   text-align: center;
+  margin-bottom: 5%;
+}
+
+.right {
+  width: 40%;
 }

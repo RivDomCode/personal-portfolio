@@ -8,7 +8,7 @@ export const AboutMePage = () => {
       </h1>
       <div className="about-main-container">
         <div className="about-container-left">
-          <h3>FACTS</h3>
+          <h3>Who am I?</h3>
           <ul>
             <li>Software Developer from Spain</li>
             <li>Bootcamp Grad</li>
@@ -20,13 +20,20 @@ export const AboutMePage = () => {
             <li></li>
           </ul>
         </div>
-        <div className="about-container-right">
-          <h3>What do I do?</h3>
-          <li>Web applications</li>
-          <li>Web design</li>
-          <li>Landing pages</li>
-          <li>SEO</li>
-          <li>...</li>
+        <div className="right d-flex  flex-column">
+          <div className="about-container-right w-100">
+            <h3>What do I do?</h3>
+            <li>Web applications</li>
+            <li>Web design</li>
+            <li>Landing pages</li>
+            <li>SEO</li>
+            <li>...</li>
+          </div>
+          <div className="about-container-right bottom w-100">
+            <h3>What tools do I use?</h3>
+            <li>Web applications</li>
+            <li>Web design</li>
+          </div>
         </div>
       </div>
     </section>
