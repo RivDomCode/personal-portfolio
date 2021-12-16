@@ -4,14 +4,30 @@ export const AboutMePage = () => {
   return (
     <section className="about">
       <h1>
-        About m<span className="letter-e">e</span> Page
+        Mor<span className="letter-e">e</span> About me
       </h1>
       <div className="about-main-container">
         <div className="about-container-left">
-          <p>Hi, I am a software developer from Spain</p>
-          <p>I got a background in other fields such as</p>
+          <h3>FACTS</h3>
+          <ul>
+            <li>Software Developer from Spain</li>
+            <li>Bootcamp Grad</li>
+            <li>4 years living in Scotland</li>
+            <li>Quality, Environment and H&S background</li>
+            <li>Lifelong learner</li>
+            <li>Organic Agriculture</li>
+            <li>...</li>
+            <li></li>
+          </ul>
         </div>
-        <div className="about-container-right"></div>
+        <div className="about-container-right">
+          <h3>What do I do?</h3>
+          <li>Web applications</li>
+          <li>Web design</li>
+          <li>Landing pages</li>
+          <li>SEO</li>
+          <li>...</li>
+        </div>
       </div>
     </section>
   );

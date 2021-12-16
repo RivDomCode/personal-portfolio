@@ -15,7 +15,6 @@ export const Projects = () => {
           <Project />
         ))}
       </div>
-      <ContactMePage />
     </section>
   );
 };

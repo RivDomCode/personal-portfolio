@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { AboutMePage } from "./components/AboutMePage";
-import { ContactMePage } from "./components/ContactMePage";
-import { HeroSectionPage } from "./components/HeroSectionPage";
 import { AsideComponent } from "./components/AsideComponent";
-import { Projects } from "./components/Projects";
+import { LandingPages } from "./components/LandingPages";
+import { Home } from "./components/Home";
+import { Footer } from "./components/Footer";
 
 
 
@@ -16,13 +16,11 @@ export const AppRouter = () => {
         <Navbar />
         <AsideComponent />
         <Switch>
-          <Route exact path="/" component={HeroSectionPage} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/about" component={AboutMePage} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/contact" component={ContactMePage} />
-
+          <Route exact path="/landing" component={LandingPages} />
         </Switch>
-
+        <Footer />
       </div>
     </Router>
   );
