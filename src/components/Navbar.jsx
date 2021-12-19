@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useGlobalContext } from "../context/AppContext";
-import logo from "../Images/logo2.jpg";
 import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {

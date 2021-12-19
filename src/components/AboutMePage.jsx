@@ -12,6 +12,7 @@ export const AboutMePage = () => {
           <ul>
             <li>Software Developer from Spain</li>
             <li>Bootcamp Grad</li>
+            <li>Spanish and English speaker</li>
             <li>4 years living in Scotland</li>
             <li>Quality, Environment and H&S background</li>
             <li>Lifelong learner</li>
@@ -20,20 +21,15 @@ export const AboutMePage = () => {
             <li></li>
           </ul>
         </div>
-        <div className="right d-flex  flex-column">
-          <div className="about-container-right w-100">
-            <h3>What do I do?</h3>
-            <li>Web applications</li>
-            <li>Web design</li>
-            <li>Landing pages</li>
-            <li>SEO</li>
-            <li>...</li>
-          </div>
-          <div className="about-container-right bottom w-100">
-            <h3>What tools do I use?</h3>
-            <li>Web applications</li>
-            <li>Web design</li>
-          </div>
+        <div className="about-container-right">
+          <h3>What do I do?</h3>
+          <li>Web applications</li>
+          <li>Web design</li>
+          <li>Landing pages</li>
+          <li>SEO</li>
+          <li>Mobile apps</li>
+          <h3>What tools do I use?</h3>
+          <p>Just the one nedeed to get job done!</p>
         </div>
       </div>
     </section>

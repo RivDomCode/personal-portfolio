@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -12,7 +11,6 @@ import {
 } from "react-icons/fa";
 import { BsArrowUpCircle } from "react-icons/bs";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
-import Typing from "react-typing-animation";
 import { useGlobalContext } from "../context/AppContext";
 import Fade from "react-reveal/Fade";
 
