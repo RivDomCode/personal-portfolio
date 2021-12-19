@@ -1,0 +1,48 @@
+//RESPONSIVE
+@media (max-width: 1100px) {
+  .projects-title {
+    margin-top: 10%;
+  }
+  .made {
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .aboutMe-leftCard {
+    font-size: 1.6rem;
+  }
+  .aboutMe-rightCard {
+    font-size: 1.2rem;
+  }
+  .aside-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+}
+
+@media (max-width: 820px) {
+  .projects-title {
+    margin-top: 25%;
+  }
+  .project-card {
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 25%;
+  }
+  .project-card-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-card-top-img {
+    max-width: 100%;
+    max-height: 20%;
+  }
+
+  .project-card-top-text {
+    width: 100%;
+  }
+}
