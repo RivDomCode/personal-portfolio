@@ -9,6 +9,9 @@
 }
 
 @media (max-width: 950px) {
+  .projects-title {
+    margin-top: 30%;
+  }
   .aboutMe-leftCard {
     font-size: 1.6rem;
   }
@@ -19,14 +22,20 @@
     display: grid;
     grid-template-columns: 30% 70%;
   }
+  .hero-section {
+    height: 50vh;
+  }
+  .hero-section-aboutMe {
+    height: 100%;
+  }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 890px) {
   .projects-title {
-    margin-top: 25%;
+    margin-top: 30%;
   }
   .project-card {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     margin-bottom: 25%;
   }
@@ -38,11 +47,105 @@
   }
 
   .project-card-top-img {
-    max-width: 100%;
+    width: 70%;
     max-height: 20%;
+    margin: auto;
+  }
+
+  .project-card-top-img img {
+    object-fit: contain;
+    width: 100%;
   }
 
   .project-card-top-text {
     width: 100%;
+  }
+
+  .aside-container {
+    display: grid;
+    grid-template-columns: 0% 100%;
+  }
+
+  .hero-section-aboutMe {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .aboutMe-leftCard {
+    width: 70%;
+    height: 30vh;
+    margin-top: 18%;
+  }
+
+  .aboutMe-rightCard {
+    width: 70%;
+    height: 30vh;
+    margin-top: 5%;
+  }
+
+  .projects-title {
+    margin-top: 40vh;
+  }
+}
+
+@media (max-width: 890px) {
+  .aboutMe-leftCard {
+    margin-top: 25%;
+  }
+
+  .projects-title {
+    margin-top: 70%;
+  }
+
+  .about {
+    height: 100%;
+  }
+
+  .about-main-container {
+    flex-direction: column;
+  }
+
+  .about-container-left {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+
+  .about-container-right {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .projects-title {
+    margin-top: 80%;
+  }
+
+  .project-card {
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 15%;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+  .under-construction {
+    font-size: 2.2rem;
+    padding: 0 2%;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-title {
+    margin-top: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .projects-title {
+    margin-top: 115%;
   }
 }

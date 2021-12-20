@@ -12,6 +12,7 @@ export const Project = () => {
               <img
                 src="https://cdn.pixabay.com/photo/2019/04/07/08/56/network-4109223_960_720.jpg"
                 alt=""
+                className="img-fluid"
               />
             </div>
             <div className="project-card-top-text">
