@@ -18,6 +18,7 @@
   border-radius: 20px;
   backdrop-filter: blur(5rem);
   box-shadow: $titles 0px 5px 7.5px -2.5px;
+  font-family: $mainFont;
 }
 
 .project-card-top {
@@ -52,10 +53,11 @@
   font-size: $medium;
   margin-bottom: 2%;
   letter-spacing: 2px;
+  color: $samplebg;
 }
 
 .project-card-top-text p {
-  font-size: $tiny;
+  font-size: 1.4rem;
 }
 
 .project-card-top-btn-container {
@@ -66,7 +68,7 @@
 
 .visit-btn,
 .more-info-btn {
-  font-size: $tiny;
+  font-size: 1.4rem;
   padding: 1% 5%;
   border-radius: 20px;
   background-color: transparent;
@@ -81,7 +83,7 @@
 
   &:hover {
     background-color: $hightlight2;
-    color: $sampleCard;
+    color: $oneMore2;
   }
 }
 
@@ -93,7 +95,7 @@
 
   &:hover {
     background-color: $titles;
-    color: $sampleCard;
+    color: $oneMore;
   }
 }
 

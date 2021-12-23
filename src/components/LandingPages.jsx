@@ -10,7 +10,7 @@ export const LandingPages = () => {
       <div className="under-construction">
         <IoConstructOutline className="construct-icon" />
         <p>Sorry for the inconvenience...</p>
-        <p> ...but this section is under construction</p>
+        <p> ...this section is under construction</p>
       </div>
     </section>
   );
