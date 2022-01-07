@@ -166,6 +166,10 @@
     margin-top: 90%;
   }
 
+  .hero-section {
+    height: 60vh;
+  }
+
   .aboutMe-rightCard h3 {
     font-size: 1.2rem;
   }
@@ -176,6 +180,20 @@
 
 @media (max-width: 550px) {
   .projects-title {
-    margin-top: 115%;
+    margin-top: 125%;
+  }
+
+  .project-card-top-text h3 {
+    font-size: $small;
+    margin-top: $tiny;
+  }
+
+  .project-card-top-text p {
+    font-size: $tiny;
+    margin-bottom: $small;
+  }
+
+  .icons {
+    font-size: $tiny;
   }
 }
