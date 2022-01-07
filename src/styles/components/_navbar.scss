@@ -19,21 +19,13 @@
   color: $titles;
   font-weight: bolder;
   padding: 1px;
+  padding-top: 5px;
   letter-spacing: 4px;
-  margin-top: 6px;
   text-decoration: none;
-}
-
-.json {
-  color: $hightlight2;
-  padding: 0.5px;
-  margin-top: 5px;
-  font-weight: bolder;
 }
 
 .menu-btn-container {
   background-color: $bg2;
-  margin-top: 6px;
 }
 
 .menu-btn-bar {
@@ -43,7 +35,6 @@
   font-size: 3rem;
   font-weight: bolder;
   animation: heartBeat 3s linear infinite;
-  margin-top: 2rem;
 }
 
 @keyframes heartBeat {
