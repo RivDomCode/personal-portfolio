@@ -2,7 +2,7 @@ import React from "react";
 import { Project } from "./Project";
 
 export const Projects = () => {
-  const projects = [1, 2, 3, 4, 5];
+  const projects = [1, 2, 3];
 
   return (
     <section className="projects-section" id="projects">

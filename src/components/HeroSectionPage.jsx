@@ -23,17 +23,21 @@ export const HeroSectionPage = () => {
         <div className="hero-section-top">
           <h1 className="hero-name">RivDom</h1>
           <p className="pro">Software Developer</p>
-          <button className="projects-btn-container animate__animated animate__fadeInRight animate__delay-1s">
-            <a href="#projects" className="projects-btn">
+          <div className="btn-container">
+            <a
+              href="#projects"
+              className="projects-btn animate__animated animate__fadeInRight animate__delay-1s"
+            >
               Go To My Projects
             </a>
-          </button>
-          <br />
-          <button className="contact-btn-container animate__animated animate__fadeInLeft animate__delay-2s">
-            <a href="#contact" className="contact-btn">
+
+            <a
+              href="#contact"
+              className="contact-btn animate__animated animate__fadeInLeft animate__delay-2s"
+            >
               Let's Talk
             </a>
-          </button>
+          </div>
         </div>
       </div>
       <div className="hero-section-aboutMe">

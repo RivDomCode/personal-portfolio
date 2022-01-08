@@ -1,7 +1,7 @@
 //HERO SECTION STYLES
 
 .hero-section {
-  height: 60vh;
+  height: 46vh;
   background-color: $bg;
   width: 100%;
 }
@@ -30,85 +30,63 @@
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.9)),
     url("../../Images/retro.jpg");
-  color: $titles;
-  display: grid;
-  grid-template-columns: 60% 40%;
   width: 100%;
   height: 100%;
   text-align: center;
   padding: 20px;
-  box-shadow: 1px 1px 4px $shadowGray;
-  display: flex;
-  justify-content: center;
 }
 
-.contact-btn-container {
-  border: 3px solid $hightlight2;
-  background-color: transparent;
-  height: $large;
-  margin-top: $tiny;
-  transition: all linear 0.5s;
+.projects-btn {
+  background: linear-gradient(
+    109.6deg,
+    rgba(45, 116, 213, 1) 11.2%,
+    rgba(121, 137, 212, 1) 91.2%
+  );
+  font-family: $mainFont, sans-serif;
+  border: 1px solid $titles;
+  text-decoration: none;
+  color: $titles;
+  font-size: $medium;
+  font-weight: bolder;
+  padding: $tiny;
+  transition: all ease-in 0.7s;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
+  margin-right: 2%;
+
   &:hover {
-    color: $bg;
-    background-color: $shadowGray;
+    color: $oneMore;
+    background: $titles;
+    background: linear-gradient(
+      109.6deg,
+      $titles 11.2%,
+      rgba(121, 137, 212, 1) 91.2%
+    );
+    border-radius: 10px;
+    border: 1px solid $oneMore;
   }
 }
 
 .contact-btn {
+  border: 1px solid $hightlight2;
+  background-color: transparent;
   font-family: $mainFont, sans-serif;
+  height: $large;
+  margin-top: $small;
   text-decoration: none;
   color: $hightlight2;
   font-size: $medium;
   font-weight: bolder;
-  width: 100%;
-  height: 100%;
   padding: $tiny;
-  transition: all linear 0.5s;
+  transition: all ease-in 0.7s;
   border-radius: 10px;
 }
 
 .contact-btn:hover {
-  border: 1px solid $hightlight2;
-  color: $titles;
-  background-color: $hightlight2;
-}
-
-.projects-btn-container {
-  background: linear-gradient(
-    109.6deg,
-    rgba(45, 116, 213, 1) 11.2%,
-    rgba(121, 137, 212, 1) 91.2%
-  );
-  color: $titles;
-  height: $large;
-  border-radius: 10px;
-}
-
-.projects-btn-container a {
-  background: linear-gradient(
-    109.6deg,
-    rgba(45, 116, 213, 1) 11.2%,
-    rgba(121, 137, 212, 1) 91.2%
-  );
-  border: 3px solid $titles;
-  font-family: $mainFont, sans-serif;
-  text-decoration: none;
-  color: $titles;
-  font-size: $medium;
-  font-weight: bolder;
-  padding: $tiny;
-  transition: all linear 0.5s;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-
-  &:hover {
-    color: $oneMore;
-    background: black;
-    border-radius: 10px;
-    border: 3px solid $oneMore;
-  }
+  border: 1px solid $samplebg;
+  color: $samplebg;
+  background: linear-gradient(109.6deg, $titles 11.2%, $hightlight2 91.2%);
 }
 
 .hero-section-aboutMe {
@@ -131,7 +109,7 @@
   font-family: $mainFont;
   border-radius: 10px;
   width: 40%;
-  height: 40vh;
+  height: 35vh;
   padding: $small;
   box-shadow: $titles 0px 5px 7.5px -2.5px;
   font-size: 1.8rem;
@@ -155,7 +133,7 @@
   padding: $small;
   border-radius: 10px;
   width: 40%;
-  height: 40vh;
+  height: 35vh;
   font-family: $secondaryFont;
   font-size: 1.4rem;
   text-align: center;
