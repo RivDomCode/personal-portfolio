@@ -27,9 +27,6 @@
 
 //Medium devices
 @media (max-width: 818px) {
-  .projects-title {
-    margin-top: 200px;
-  }
   .hero-section {
     height: 55vh;
   }
@@ -84,18 +81,80 @@
   .aside-container {
     grid-template-columns: 0 100%;
   }
+
+  .contact-form {
+    width: 70%;
+  }
 }
 
 //Small devices
-@media (max-width: 576px) {
+@media (max-width: 614px) {
+  .hero-section {
+    height: 60vh;
+  }
   .projects-title {
     margin-top: 420px;
   }
   .aboutMe-leftCard {
-    margin-top: 30%;
+    margin-top: 40%;
   }
 
   .projects-title {
-    margin-top: 99%;
+    margin-top: 110%;
+  }
+
+  .contact-form {
+    width: 70;
+  }
+}
+
+@media (max-width: 510px) {
+  .hero-section {
+    height: 65vh;
+  }
+
+  .projects-title {
+    margin-top: 170%;
+  }
+
+  .aboutMe-leftCard,
+  .aboutMe-rightCard {
+    font-size: 1.1rem;
+    height: 100%;
+  }
+
+  .contact-btn,
+  .projects-btn {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-section {
+    height: 65vh;
+  }
+
+  .contact-btn,
+  .projects-btn {
+    font-size: 1.4rem;
+  }
+
+  .projects-title {
+    margin-top: 190%;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-section {
+    height: 72vh;
+  }
+
+  .contact-btn,
+  .projects-btn {
+    font-size: 1.2rem;
+  }
+
+  .projects-title {
+    margin-top: 235%;
   }
 }
