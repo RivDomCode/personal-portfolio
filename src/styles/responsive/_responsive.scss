@@ -1,209 +1,101 @@
-//RESPONSIVE
+//Extra extra large devices
+@media (max-width: 1400px) {
+}
 
-@media (min-width: 1700px) {
-  .project-card-top-text p {
-    padding-bottom: 5rem;
+//Extra large devices
+@media (max-width: 1200px) {
+}
+
+//Large devices
+@media (max-width: 886px) {
+  .projects-title {
+    margin-top: 120px;
+  }
+  .aboutMe-leftCard,
+  .aboutMe-rightCard {
+    font-size: 1.3rem;
+  }
+  .project-card {
+    flex-direction: column;
   }
 
-  .visit-btn,
-  .more-info-btn {
+  .project-card img {
+    min-height: 50%;
+    min-width: 100%;
+  }
+}
+
+//Medium devices
+@media (max-width: 818px) {
+  .projects-title {
+    margin-top: 200px;
+  }
+  .hero-section {
+    height: 55vh;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects-btn {
+    width: 33%;
+    font-size: 2.4rem;
+    margin: auto;
+  }
+
+  .contact-btn {
+    width: 33%;
+    font-size: 2.4rem;
+    margin: auto;
+    margin-top: 2.5%;
+  }
+
+  .hero-section-aboutMe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutMe-leftCard {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 66%;
+  }
+
+  .aboutMe-rightCard {
+    width: 66%;
+  }
+
+  .projects-title {
+    margin-top: 60%;
+  }
+}
+
+//Small devices
+@media (max-width: 786px) {
+  .projects-title {
+    margin-top: 380px;
+  }
+
+  .projects-btn,
+  .contact-btn {
     font-size: 2rem;
   }
 
-  .project-card-top-btn-container {
-    margin-top: 2%;
-    margin-bottom: 2%;
+  .aside-container {
+    grid-template-columns: 0 100%;
   }
 }
 
-@media (min-width: 1500px) {
-  .project-card-top-text p {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 1100px) {
+//Small devices
+@media (max-width: 576px) {
   .projects-title {
-    margin-top: 10%;
+    margin-top: 420px;
   }
-  .made {
-    letter-spacing: 0;
-  }
-}
-
-@media (max-width: 950px) {
-  .projects-title {
+  .aboutMe-leftCard {
     margin-top: 30%;
   }
-  .aboutMe-leftCard {
-    font-size: 1.6rem;
-  }
-  .aboutMe-rightCard {
-    font-size: 1.2rem;
-  }
-  .aside-container {
-    display: grid;
-    grid-template-columns: 30% 70%;
-  }
-  .hero-section {
-    height: 50vh;
-  }
-  .hero-section-aboutMe {
-    height: 100%;
-  }
-}
-
-@media (max-width: 890px) {
-  .projects-title {
-    margin-top: 30%;
-  }
-  .project-card {
-    height: 80vh;
-    width: 100%;
-    margin-bottom: 25%;
-  }
-  .project-card-top {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-
-  .project-card-top-img {
-    width: 70%;
-    max-height: 20%;
-    margin: auto;
-  }
-
-  .project-card-top-img img {
-    object-fit: contain;
-    width: 100%;
-  }
-
-  .project-card-top-text {
-    width: 100%;
-  }
-
-  .aside-container {
-    display: grid;
-    grid-template-columns: 0% 100%;
-  }
-
-  .hero-section-aboutMe {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  .aboutMe-leftCard {
-    width: 70%;
-    height: 30vh;
-    margin-top: 18%;
-  }
-
-  .aboutMe-rightCard {
-    width: 70%;
-    height: 30vh;
-    margin-top: 5%;
-  }
 
   .projects-title {
-    margin-top: 40vh;
+    margin-top: 99%;
   }
-}
-
-@media (max-width: 890px) {
-  .aboutMe-leftCard {
-    margin-top: 25%;
-  }
-
-  .projects-title {
-    margin-top: 70%;
-  }
-
-  .about {
-    height: 100%;
-  }
-
-  .about-main-container {
-    flex-direction: column;
-  }
-
-  .about-container-left {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 10%;
-  }
-
-  .about-container-right {
-    width: 80%;
-    margin: auto;
-  }
-}
-
-@media (max-width: 680px) {
-  .projects-title {
-    margin-top: 80%;
-  }
-
-  .project-card {
-    height: 70vh;
-    width: 100%;
-    margin-bottom: 15%;
-  }
-
-  .contact-form {
-    width: 80%;
-  }
-  .under-construction {
-    font-size: 2.2rem;
-    padding: 0 2%;
-  }
-}
-
-@media (max-width: 640px) {
-  .projects-title {
-    margin-top: 90%;
-  }
-
-  .hero-section {
-    height: 60vh;
-  }
-
-  .aboutMe-rightCard h3 {
-    font-size: 1.2rem;
-  }
-  .aboutMe-leftCard {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 550px) {
-  .projects-title {
-    margin-top: 125%;
-  }
-
-  .project-card-top-text h3 {
-    font-size: $small;
-    margin-top: $tiny;
-  }
-
-  .project-card-top-text p {
-    font-size: $tiny;
-    margin-bottom: $small;
-  }
-
-  .icons {
-    font-size: $tiny;
-  }
-
-  .aboutMe-rightCard{
-    height: 100%;
-  }
-
-  .aboutMe-leftCard{
-    height: 100%;
-    margin-top: 50%;
-  }
-
 }
