@@ -7,25 +7,28 @@ export const AboutMePage = () => {
         Mor<span className="letter-e">e</span> About me
       </h1>
       <div className="about-main-container">
-        <div className="about-container-left">
-          <h3>Who am I?</h3>
-          <li>Software Developer from Spain</li>
-          <li>Bootcamp Grad</li>
-          <li>Spanish and English speaker</li>
-          <li>4 years living in Scotland</li>
-          <li>Quality, Environment and H&S background</li>
-          <li>Lifelong learner</li>
-          <li>...</li>
-          <li></li>
-        </div>
-        <div className="about-container-right">
-          <h3>What do I do?</h3>
-          <li>Web applications</li>
-          <li>Web design</li>
-          <li>Landing pages</li>
-          <li>SEO</li>
-          <li>Mobile apps</li>
-          <li>...</li>
+        <div className="about-container">
+          <h2>Who am I?</h2>
+          <ul>
+            <li>
+              I am Software Developer from Spain, Bootcamp Grad and longlife
+              learner.
+            </li>
+            <li>
+              I am problem solver oriented guy who believes the language is just
+              a tool to get a job done...just try to choose the right one for
+              each project!
+            </li>
+          </ul>
+          <h2>What do i do?</h2>
+          <ul>
+            <li>Landing Pages</li>
+            <li>Web Apps</li>
+            <li>Mobile Apps</li>
+            <li>Web Design</li>
+            <li>SEO</li>
+            <li>...</li>
+          </ul>
         </div>
       </div>
     </section>

@@ -17,10 +17,10 @@
 .about-main-container {
   padding: 2% 7%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.about-container-left {
+.about-container {
   background-image: linear-gradient(
     109.6deg,
     rgba(45, 116, 213, 1) 11.2%,
@@ -29,41 +29,17 @@
   padding: $medium;
 
   border-radius: 10px;
-  width: 45%;
-  height: 50vh;
+  width: 80%;
+  height: 100%;
   box-shadow: $titles 0px 5px 7.5px -2.5px;
   font-size: 1.4rem;
   text-align: center;
 }
 
-.about-container-left h3 {
+.about-container h2 {
   color: $samplebg;
   text-transform: uppercase;
   font-weight: bolder;
   letter-spacing: 1px;
-  font-size: 2rem;
-}
-
-.about-container-right {
-  background-image: linear-gradient(
-    109.6deg,
-    rgba(121, 137, 212, 1) 11.2%,
-    rgba(45, 116, 213, 1) 91.2%
-  );
-  padding: $medium;
-
-  border-radius: 10px;
-  width: 45%;
-  height: 50vh;
-  box-shadow: $titles 0px 5px 7.5px -2.5px;
-  font-size: 1.4rem;
-  text-align: center;
-}
-
-.about-container-right h3 {
-  color: $samplebg;
-  text-transform: uppercase;
-  font-weight: bolder;
-  letter-spacing: 1px;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
