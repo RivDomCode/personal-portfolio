@@ -47,14 +47,14 @@ export const AsideComponent = () => {
               >
                 More About Me
               </NavLink>
-              <a
+              <NavLink
                 href="/landing"
                 className="nav-link long "
                 exact
                 onClick={closeAside}
               >
                 Landing Pages
-              </a>
+              </NavLink>
               <a
                 href="https://rivdomblog.hashnode.dev/"
                 className="nav-link animate__animated animate__fadeInRight"
