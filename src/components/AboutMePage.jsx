@@ -24,7 +24,7 @@ export const AboutMePage = () => {
               NodeJS....
             </li>
             <li>
-              ...but I am problem solving oriented guy who believes the
+              ...but I'm problem solving oriented guy who believes the
               language/framework is just a tool to get a job done...
             </li>
             <li>...just try to choose the right one for each project!</li>
