@@ -77,13 +77,23 @@
   .contact-btn {
     font-size: 2rem;
   }
+  .aboutMe-leftCard,
+  .aboutMe-rightCard {
+    font-size: 1.8rem;
+    height: 100%;
+    width: 90%;
+  }
+
+  .aboutMe-leftCard {
+    margin-top: 25%;
+  }
 
   .aside-container {
     grid-template-columns: 0 100%;
   }
 
   .contact-form {
-    width: 70%;
+    width: 90%;
   }
 
   .about-container {
@@ -98,7 +108,7 @@
 //Small devices
 @media (max-width: 614px) {
   .hero-section {
-    height: 60vh;
+    height: 65vh;
   }
   .projects-title {
     margin-top: 420px;
@@ -127,8 +137,9 @@
 
   .aboutMe-leftCard,
   .aboutMe-rightCard {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     height: 100%;
+    width: 90%;
   }
 
   .contact-btn,

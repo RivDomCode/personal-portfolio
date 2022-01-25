@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useGlobalContext } from "../context/AppContext";
 import { NavLink } from "react-router-dom";
+import finalLogo from "../Images/logo other version.jpg";
 
 export const Navbar = () => {
   const { openAside } = useGlobalContext();
@@ -10,10 +11,9 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand " id="navbar">
       <div className="container-fluid">
         <div className="logo d-flex">
-          {/* <img src={logo} alt="" className="logo-img" /> */}
           <div className="logo d-flex">
             <NavLink to="/" className="name">
-              <h1 className="name">RivDom</h1>
+              <img src={finalLogo} alt="logo" className="name__logo" />
             </NavLink>
           </div>
         </div>
