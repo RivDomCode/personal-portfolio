@@ -48,7 +48,7 @@ export const AsideComponent = () => {
                 More About Me
               </NavLink>
               <NavLink
-                href="/landing"
+                to="/landing"
                 className="nav-link long "
                 exact
                 onClick={closeAside}
