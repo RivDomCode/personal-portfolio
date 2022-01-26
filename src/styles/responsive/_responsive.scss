@@ -17,9 +17,13 @@
   .projects-title {
     margin-top: 180px;
   }
-  .aboutMe-leftCard,
   .aboutMe-rightCard {
     font-size: 1.3rem;
+  }
+
+  .aboutMe-leftCard {
+    font-size: 1.75rem;
+    padding-top: 50px;
   }
   .project-card {
     flex-direction: column;
@@ -62,6 +66,7 @@
     margin-top: 15%;
     margin-bottom: 5%;
     width: 66%;
+    font-size: 1.6rem;
   }
 
   .aboutMe-rightCard {

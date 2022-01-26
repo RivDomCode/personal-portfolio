@@ -109,8 +109,9 @@
   font-family: $mainFont;
   border-radius: 10px;
   width: 40%;
-  height: 35vh;
+  height: 95%;
   padding: $small;
+  padding-top: 4%;
   box-shadow: $titles 0px 3px 5.5px -2.5px;
   font-size: 1.8rem;
   letter-spacing: 2px;
@@ -131,9 +132,10 @@
   );
   box-shadow: $titles 0px 3px 5.5px -2.5px;
   padding: $small;
+  padding-top: 4%;
   border-radius: 10px;
   width: 40%;
-  height: 35vh;
+  height: 95%;
   font-family: $secondaryFont;
   font-size: 1.4rem;
   text-align: center;
