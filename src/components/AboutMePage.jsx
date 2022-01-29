@@ -13,8 +13,8 @@ export const AboutMePage = () => {
           <p className="whoAmI">
             I am Software Developer from Spain, Bootcamp Grad and longlife
             learner. I speak spanish and english because I was living in the UK
-            for I am a problem solving oriented guy who believes the
-            language/framework is just a tool to get a job done.
+            for nearly 4 years. I am a problem solving oriented guy who believes
+            the language/framework is just a tool to get a job done.
           </p>
           <h2>What do i do?</h2>
           <ul>
