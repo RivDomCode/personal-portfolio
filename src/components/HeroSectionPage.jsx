@@ -21,7 +21,7 @@ export const HeroSectionPage = () => {
     <div className="hero-section" id="hero">
       <div className="bg-text">
         <div className="hero-section-top">
-          <h1 className="hero-name">RivDom</h1>
+          <h1 className="hero-name">Pedro Rivas</h1>
           <p className="pro">Software Developer</p>
           <div className="btn-container">
             <a

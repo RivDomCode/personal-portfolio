@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="footer-container">
       <hr />
-      <p> © RivDom {currentYear} Portfolio Website </p>
+      <p> © Pedro Rivas {currentYear} Portfolio Website </p>
     </footer>
   );
 };
