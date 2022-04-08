@@ -10,8 +10,8 @@ export const Projects = () => {
         Portf<span className="letter-e">o</span>lio
       </h1>
       <div>
-        {projects.map((value) => (
-          <Project />
+        {projects.map((value, index) => (
+          <Project key={index} />
         ))}
       </div>
     </section>
