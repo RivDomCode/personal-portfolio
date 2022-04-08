@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect } from "react/cjs/react.development";
+import React, { useEffect } from "react";
 import { ContactMePage } from "./ContactMePage";
 import { HeroSectionPage } from "./HeroSectionPage";
 import { Projects } from "./Projects";
@@ -14,8 +13,6 @@ export const Home = () => {
       confirmButtonColor: "	#2e74d6",
     });
   }, []);
-
-  useEffect(() => {}, []);
 
   return (
     <>
