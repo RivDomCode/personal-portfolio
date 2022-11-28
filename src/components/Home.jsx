@@ -8,8 +8,8 @@ export const Home = () => {
   useEffect(() => {
     Swal.fire({
       icon: "warning",
-      title: "Currently this porfolio is being updated...",
-      text: "Not all sections are available, but you can enjoy most of them!",
+      title: "This porfolio is deprecated...",
+      text: "Not all sections are available and contact form is not working anymore....",
       confirmButtonColor: "	#2e74d6",
     });
   }, []);

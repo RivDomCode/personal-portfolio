@@ -10,9 +10,9 @@ export const ContactMePage = () => {
   //emailJS config
   const form = useRef();
 
-  const SERVICE_ID = "service_oqytobj";
-  const TEMPLATE_ID = "template_2476zgb";
-  const USER_ID = "user_4KWaK2MwNh4cM4yJEZfTS";
+  const SERVICE_ID = "deleted";
+  const TEMPLATE_ID = "deleted";
+  const USER_ID = "deleted";
 
   const handleSubmitForm = (e) => {
     e.preventDefault();
